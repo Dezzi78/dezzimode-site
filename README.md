@@ -1,11 +1,18 @@
-# Dezzimode — Starter Site
+# Dezzi Mode — Site
 
-This repository contains a minimal static site for Dezzimode.
+This repository contains the static site for **Dezzi Mode**, the
+streetwear/merch label — styled with the brand's brutalist Void/Venom/Electric
+palette (`#0D0D0D` / `#990000` / `#008080`).
 
 Files:
-- index.html
-- styles.css
-- script.js
+- `index.html`, `styles.css`, `script.js` — the live public site
+- `studio.html` — a separate, private internal production/pipeline tracking
+  tool (Adobe/Figma pipelines, client CRM, etc.) — not part of the public
+  site, not linked from it
+- `archive/dezzis-designs-original-site/` — a snapshot of the original
+  two-brand site (Dezzi's Designs studio-services + Dezzi Mode) that was
+  previously live at `dezzisdesigns.studio`, kept for reference since the
+  Dezzi's Designs half was dropped from this repo's live site
 - studio.html — private production pipeline studio (see below)
 
 ## Dezzi Mode Production Pipeline Studio
@@ -46,9 +53,9 @@ Quick DNS notes for Netlify (if you keep the domain at Squarespace and can edit 
 - For the www subdomain, add a CNAME pointing to your Netlify site (example: yoursite.netlify.app).
 
 Contact form
-- The HTML form uses Formspree by default. To make it work:
-  1. Sign up at https://formspree.io and create a form to get an endpoint.
-  2. Replace the action URL in index.html with the endpoint Formspree gives you.
+- Already wired up to Formspree (`https://formspree.io/f/xjybzyvg`) — both
+  the "Get Notified" drop signup and the contact form submit there via AJAX
+  (see `script.js`). Manage/view submissions from the Formspree dashboard.
 
 E-commerce options (low-cost to start)
 - Ecwid has a free plan for small catalogs and provides an embed snippet you can paste into the site.
