@@ -6,6 +6,28 @@ Files:
 - index.html
 - styles.css
 - script.js
+- studio.html — private production pipeline studio (see below)
+
+## Dezzi Mode Production Pipeline Studio
+
+`studio.html` is a standalone, single-file SPA (HTML5 + Tailwind CDN + vanilla JS) that
+functions as a private command center for the Dezzi Mode brand: a combined design/watermark
+canvas tool, apparel mockup previewer, Adobe & Figma pipeline tracker, web design/kanban
+engine, Notion content gateway, client CRM, and operations/asset vault. It is fully
+self-contained — no build step, no backend, no external accounts required.
+
+All data (checklists, CRM records, pipeline logs, snippets, ledger entries, kanban state)
+is persisted to the browser's `localStorage` only. Nothing is sent anywhere. Use the
+"Export Full Vault (JSON)" / "Import Vault" controls in the Operations & Assets tab to
+back up or move data between browsers/devices.
+
+Open it directly:
+```
+python3 -m http.server 8000
+# then visit http://localhost:8000/studio.html
+```
+Or just double-click `studio.html` to open it in a browser (some features like drag/drop
+image upload work best served over http/https rather than file://).
 
 Run locally
 1. Save these files in a folder (already in this repo).
