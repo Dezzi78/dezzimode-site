@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dezzimode — Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="#">Dezzimode</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav" id="nav">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <h1>Welcome to Dezzimode</h1>
+      <p>Design-forward products and services for your creative life.</p>
+      <a class="btn" href="#contact">Get in touch</a>
+    </section>
+
+    <section id="about" class="container section">
+      <h2>About</h2>
+      <p>Dezzimode is a small business focused on original designs and custom work. Write a short paragraph here about your story, mission, or what makes you different.</p>
+    </section>
+
+    <section id="services" class="container section">
+      <h2>Services</h2>
+      <ul class="services">
+        <li>
+          <h3>Service One</h3>
+          <p>Short description of this service.</p>
+        </li>
+        <li>
+          <h3>Service Two</h3>
+          <p>Short description of this service.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section id="blog" class="container section">
+      <h2>Blog</h2>
+      <p>Coming soon — posts and updates about Dezzimode.</p>
+    </section>
+
+    <section id="contact" class="container section">
+      <h2>Contact</h2>
+      <p>Fill out the form below and we will get back to you — or email us at <a href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>.</p>
+
+      <!-- To use a working form, sign up at Formspree.io (or similar) and replace the action URL -->
+      <form id="contact-form" action="https://formspree.io/f/xjybzyvg" method="POST">
+        <label>
+          Your name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit" class="btn">Send</button>
+        <p id="form-status" class="form-status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Dezzimode — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

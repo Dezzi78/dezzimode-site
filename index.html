@@ -3,82 +3,167 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dezzimode — Home</title>
+  <title>DEZZI MODE — Make Them Look.</title>
+  <meta name="description" content="Dezzi Mode — streetwear graphics, custom apparel, screen print files, stickers, and limited art prints. Shipped from Kenai, Alaska." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="#">Dezzimode</a>
-      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+  <!-- ░░ TOP TICKER ░░ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker-track">
+      <span>DEZZI MODE</span><span>✕</span><span>MAKE THEM LOOK</span><span>✕</span>
+      <span>DEZZI MODE</span><span>✕</span><span>MAKE THEM LOOK</span><span>✕</span>
+      <span>DEZZI MODE</span><span>✕</span><span>MAKE THEM LOOK</span><span>✕</span>
+      <span>DEZZI MODE</span><span>✕</span><span>MAKE THEM LOOK</span><span>✕</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="logo" href="#top">DEZZI<span class="logo-accent">MODE</span></a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="nav" id="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#blog">Blog</a>
+        <a href="#shop">Shop</a>
+        <a href="#drop">Drop</a>
         <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#drop">Get Notified</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section id="home" class="hero container">
-      <h1>Welcome to Dezzimode</h1>
-      <p>Design-forward products and services for your creative life.</p>
-      <a class="btn" href="#contact">Get in touch</a>
+    <!-- ░░ HERO ░░ -->
+    <section class="hero" id="hero">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="eyebrow">// DEZZI MODE — THE LABEL</p>
+        <h1 class="hero-title">MAKE THEM<br><span class="hero-accent">LOOK.</span></h1>
+        <p class="hero-lede">
+          Dezzi Mode is the merch arm — where designs go from screen to something you can wear,
+          carry, and collect. Graphic tees, sticker packs, art prints, screen print files, custom
+          apparel. Small runs, big energy. Shipped from Alaska with a thank-you note in every package.
+        </p>
+        <p class="hero-lede hero-lede-small">
+          First drop is in the works. Limited quantities. When it's gone, it's gone.
+        </p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Shop Mode ▸</a>
+          <a href="#drop" class="btn btn-outline">Get Notified</a>
+        </div>
+      </div>
+      <div class="hero-frame" aria-hidden="true">
+        <span class="frame-corner tl"></span>
+        <span class="frame-corner tr"></span>
+        <span class="frame-corner bl"></span>
+        <span class="frame-corner br"></span>
+      </div>
     </section>
 
-    <section id="about" class="container section">
-      <h2>About</h2>
-      <p>Dezzimode is a small business focused on original designs and custom work. Write a short paragraph here about your story, mission, or what makes you different.</p>
+    <!-- ░░ CATEGORIES / SHOP ░░ -->
+    <section id="shop" class="section categories">
+      <div class="container">
+        <h2 class="section-title"><span class="section-num">01—05</span> What We Make</h2>
+        <div class="cat-grid">
+          <article class="cat-card reveal">
+            <span class="cat-num">01</span>
+            <h3 class="cat-name">Streetwear Graphic Design</h3>
+            <p class="cat-desc">Drop-ready apparel graphics</p>
+          </article>
+          <article class="cat-card reveal">
+            <span class="cat-num">02</span>
+            <h3 class="cat-name">Custom Apparel</h3>
+            <p class="cat-desc">Tees, hoodies, hats — small batch</p>
+          </article>
+          <article class="cat-card reveal">
+            <span class="cat-num">03</span>
+            <h3 class="cat-name">Screen Print &amp; Embroidery Files</h3>
+            <p class="cat-desc">Production-ready art files</p>
+          </article>
+          <article class="cat-card reveal">
+            <span class="cat-num">04</span>
+            <h3 class="cat-name">Product Labels, Stickers &amp; Decals</h3>
+            <p class="cat-desc">Vinyl, holographic, weatherproof</p>
+          </article>
+          <article class="cat-card reveal">
+            <span class="cat-num">05</span>
+            <h3 class="cat-name">Art Prints &amp; Collectibles</h3>
+            <p class="cat-desc">Signed, numbered, limited</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <section id="services" class="container section">
-      <h2>Services</h2>
-      <ul class="services">
-        <li>
-          <h3>Service One</h3>
-          <p>Short description of this service.</p>
-        </li>
-        <li>
-          <h3>Service Two</h3>
-          <p>Short description of this service.</p>
-        </li>
-      </ul>
+    <!-- ░░ DROP TEASER ░░ -->
+    <section id="drop" class="section drop">
+      <div class="container drop-inner">
+        <div class="drop-frame" aria-hidden="true"></div>
+        <p class="drop-label">// FIRST DROP</p>
+        <h2 class="drop-status">COMING SOON</h2>
+        <p class="drop-copy">Be first in line. Limited quantities, no restocks.</p>
+        <form id="notify-form" class="notify-form" action="https://formspree.io/f/xjybzyvg" method="POST">
+          <input type="hidden" name="form_type" value="Get Notified — Dezzi Mode Drop" />
+          <label class="visually-hidden" for="notify-email">Email address</label>
+          <input id="notify-email" type="email" name="email" placeholder="your@email.com" required />
+          <button type="submit" class="btn btn-primary">Get Notified ▸</button>
+        </form>
+        <p id="notify-status" class="notify-status" aria-live="polite"></p>
+      </div>
     </section>
 
-    <section id="blog" class="container section">
-      <h2>Blog</h2>
-      <p>Coming soon — posts and updates about Dezzimode.</p>
-    </section>
+    <!-- ░░ CONTACT / FOOTER ░░ -->
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <h2 class="section-title"><span class="section-num">//</span> Let's Talk</h2>
+        <div class="contact-grid">
+          <div class="contact-block">
+            <span class="contact-label">Email</span>
+            <a class="contact-value" href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>
+          </div>
+          <div class="contact-block">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Kenai, Alaska</span>
+          </div>
+          <div class="contact-block">
+            <span class="contact-label">Instagram</span>
+            <a class="contact-value" href="https://instagram.com/dezzi_simply_iconic" target="_blank" rel="noopener">@dezzi_simply_iconic</a>
+          </div>
+          <div class="contact-block">
+            <span class="contact-label">Site</span>
+            <a class="contact-value" href="https://dezzimode.studio" target="_blank" rel="noopener">dezzimode.studio</a>
+          </div>
+        </div>
 
-    <section id="contact" class="container section">
-      <h2>Contact</h2>
-      <p>Fill out the form below and we will get back to you — or email us at <a href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>.</p>
-
-      <!-- To use a working form, sign up at Formspree.io (or similar) and replace the action URL -->
-      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <label>
-          Your name
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button type="submit" class="btn">Send</button>
-        <p id="form-status" class="form-status" aria-live="polite"></p>
-      </form>
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xjybzyvg" method="POST">
+          <input type="hidden" name="form_type" value="Contact — Dezzi Mode" />
+          <label>
+            Your name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="4"></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary">Send ▸</button>
+          <p id="form-status" class="notify-status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Dezzimode — All rights reserved.</p>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> DEZZI MODE — All rights reserved.</span>
+      <span class="footer-tag">MAKE THEM LOOK.</span>
     </div>
   </footer>
 
