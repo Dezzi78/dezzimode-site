@@ -1120,7 +1120,7 @@ document.getElementById('pipelineTabs').parentElement.parentElement.addEventList
   }
 });
 
-document.getElementById('pipelineTabs').closest('body') || document.body.addEventListener('change', e=>{
+document.body.addEventListener('change', e=>{
   const sel = e.target.closest('select[data-role=status]');
   if(sel){
     const {pipe, idx} = sel.dataset;
