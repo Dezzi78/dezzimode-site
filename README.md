@@ -13,15 +13,17 @@ Run locally
    - python3 -m http.server 8000
    - Open http://localhost:8000 in your browser.
 
-Deploy to Netlify (recommended, free)
-1. Sign up at https://app.netlify.com using GitHub to connect your account.
-2. New site → Import from Git → select this repository (Dezzi78/dezzimode-site) → Deploy site.
-3. In Netlify: Site settings → Domain management → Add custom domain → enter dezzimode.studio and follow prompts.
-4. Netlify will provide instructions for DNS records. Add the records at your domain provider (Squarespace or new registrar). Netlify will also enable HTTPS automatically.
+Deploy to GitHub Pages (free, already wired up in this repo)
+1. A workflow at `.github/workflows/deploy.yml` builds and deploys the site to GitHub Pages on every push to `main`.
+2. One-time setup (you need to do this in the GitHub UI — it can't be done from a commit): go to the repo's **Settings → Pages**, and under "Build and deployment" set **Source** to **GitHub Actions**.
+3. Push/merge to `main` and the workflow will run automatically (check the **Actions** tab for status). Your site will be live at `https://dezzi78.github.io/dezzimode-site/` once it succeeds.
+4. A `CNAME` file in this repo is already set to `dezzimode.studio` for the custom domain. In **Settings → Pages → Custom domain**, confirm it shows `dezzimode.studio` and click "Enforce HTTPS" once the certificate is issued (can take a few minutes to hours).
 
-Quick DNS notes for Netlify (if you keep the domain at Squarespace and can edit DNS there):
-- For the apex (dezzimode.studio), add the A records Netlify shows (or use Netlify DNS).
-- For the www subdomain, add a CNAME pointing to your Netlify site (example: yoursite.netlify.app).
+Quick DNS notes for GitHub Pages (if you keep the domain at Squarespace and can edit DNS there):
+- For the apex (dezzimode.studio), add these four A records pointing to GitHub's Pages IPs:
+  185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
+- For the www subdomain, add a CNAME record pointing to `dezzi78.github.io`.
+- DNS changes can take anywhere from a few minutes to 24-48 hours to propagate.
 
 Contact form
 - The HTML form uses Formspree by default. To make it work:
