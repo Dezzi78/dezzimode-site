@@ -3,19 +3,25 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dezzimode — Home</title>
+  <title>Dezzimode — Downtown Neon</title>
+  <meta name="description" content="Dezzimode — design-forward apparel and originals, straight off the block." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&family=Rubik+Glitch&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="sky-bg" aria-hidden="true"></div>
+
   <header class="site-header">
-    <div class="container">
-      <a class="logo" href="#">Dezzimode</a>
-      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+    <div class="container header-inner">
+      <a class="logo" href="#home">Dezzimode</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
       <nav class="nav" id="nav">
         <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#blog">Blog</a>
+        <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -23,40 +29,79 @@
 
   <main>
     <section id="home" class="hero container">
-      <h1>Welcome to Dezzimode</h1>
-      <p>Design-forward products and services for your creative life.</p>
-      <a class="btn" href="#contact">Get in touch</a>
+      <div class="hero-copy">
+        <p class="eyebrow">Welcome to the block</p>
+        <h1 class="neon-text">DEZZIMODE</h1>
+        <p class="tagline">Downtown originals. Loud color, sharp edges, made for the street after sundown.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#shop">Shop the Drop</a>
+          <a class="btn btn-ghost" href="#about">Our Story</a>
+        </div>
+      </div>
+      <div class="hero-portrait-wrap">
+        <div class="hero-portrait" id="hero-portrait">
+          <span class="portrait-placeholder">Your photo goes here</span>
+        </div>
+        <div class="portrait-glow" aria-hidden="true"></div>
+      </div>
     </section>
 
-    <section id="about" class="container section">
-      <h2>About</h2>
-      <p>Dezzimode is a small business focused on original designs and custom work. Write a short paragraph here about your story, mission, or what makes you different.</p>
+    <section id="shop" class="container section">
+      <h2 class="section-title neon-text-sm">The Shop</h2>
+      <p class="section-sub">Placeholder drop — swap these for your real products and prices whenever you're ready.</p>
+
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-image ph-1" aria-hidden="true"></div>
+          <h3>Neon Wolf Tee</h3>
+          <p class="price">$38.00</p>
+          <button class="btn btn-primary btn-small" type="button">Buy Now</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image ph-2" aria-hidden="true"></div>
+          <h3>Sugar Skull Hoodie</h3>
+          <p class="price">$64.00</p>
+          <button class="btn btn-primary btn-small" type="button">Buy Now</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image ph-3" aria-hidden="true"></div>
+          <h3>Downtown Snapback</h3>
+          <p class="price">$28.00</p>
+          <button class="btn btn-primary btn-small" type="button">Buy Now</button>
+        </article>
+
+        <article class="product-card">
+          <div class="product-image ph-4" aria-hidden="true"></div>
+          <h3>Midnight Bomber</h3>
+          <p class="price">$120.00</p>
+          <button class="btn btn-primary btn-small" type="button">Buy Now</button>
+        </article>
+      </div>
     </section>
 
-    <section id="services" class="container section">
-      <h2>Services</h2>
-      <ul class="services">
-        <li>
-          <h3>Service One</h3>
-          <p>Short description of this service.</p>
-        </li>
-        <li>
-          <h3>Service Two</h3>
-          <p>Short description of this service.</p>
-        </li>
-      </ul>
+    <section id="about" class="container section about-section">
+      <h2 class="section-title neon-text-sm">About Dezzimode</h2>
+      <p>Dezzimode started on the street, not in a boardroom — inspired by mural walls, neon signage, and the hour right after sunset when a city gets its color back. Every piece is built to hold that same energy: bold, handmade in spirit, and unmistakably original.</p>
+      <p>This is a small, independent operation — every design, print, and package is touched by hand before it reaches you.</p>
     </section>
 
-    <section id="blog" class="container section">
-      <h2>Blog</h2>
-      <p>Coming soon — posts and updates about Dezzimode.</p>
+    <section id="gallery" class="gallery-strip container section">
+      <h2 class="section-title neon-text-sm">From the Block</h2>
+      <div class="gallery-grid">
+        <div class="gallery-tile tile-1"></div>
+        <div class="gallery-tile tile-2"></div>
+        <div class="gallery-tile tile-3"></div>
+        <div class="gallery-tile tile-4"></div>
+      </div>
+      <p class="section-sub">Placeholder tiles — drop in real shots of murals, product, and behind-the-scenes whenever you have them.</p>
     </section>
 
     <section id="contact" class="container section">
-      <h2>Contact</h2>
-      <p>Fill out the form below and we will get back to you — or email us at <a href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>.</p>
+      <h2 class="section-title neon-text-sm">Get In Touch</h2>
+      <p>Questions about an order, a collab, or just want to say hi? Reach out — or email <a href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>.</p>
 
-      <!-- To use a working form, sign up at Formspree.io (or similar) and replace the action URL -->
       <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
         <label>
           Your name
@@ -70,15 +115,19 @@
           Message
           <textarea name="message" rows="5" required></textarea>
         </label>
-        <button type="submit" class="btn">Send</button>
+        <button type="submit" class="btn btn-primary">Send</button>
         <p id="form-status" class="form-status" aria-live="polite"></p>
       </form>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-inner">
       <p>© <span id="year"></span> Dezzimode — All rights reserved.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">IG</a>
+        <a href="#" aria-label="TikTok">TT</a>
+      </div>
     </div>
   </footer>
 

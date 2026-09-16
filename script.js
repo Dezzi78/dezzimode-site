@@ -5,12 +5,25 @@ const menuToggle = document.getElementById('menu-toggle');
 const nav = document.getElementById('nav');
 if (menuToggle && nav) {
   menuToggle.addEventListener('click', () => {
-    const visible = nav.style.display === 'flex';
-    nav.style.display = visible ? 'none' : 'flex';
+    const isOpen = nav.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+  nav.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
   });
 }
 
-// Contact form status (works with Formspree or similar endpoints)
+// Placeholder "Buy Now" buttons — wire these to real checkout links when ready
+document.querySelectorAll('.product-card .btn').forEach((button) => {
+  button.addEventListener('click', () => {
+    alert('Checkout isn\'t connected yet — add a PayPal/Stripe link or embed here when you\'re ready to sell this item.');
+  });
+});
+
+// Contact form (works with Formspree or similar endpoints)
 const form = document.getElementById('contact-form');
 const status = document.getElementById('form-status');
 if (form) {
