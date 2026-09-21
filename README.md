@@ -42,15 +42,28 @@ Run locally
    - python3 -m http.server 8000
    - Open http://localhost:8000 in your browser.
 
-Deploy to Netlify (recommended, free)
-1. Sign up at https://app.netlify.com using GitHub to connect your account.
-2. New site → Import from Git → select this repository (Dezzi78/dezzimode-site) → Deploy site.
-3. In Netlify: Site settings → Domain management → Add custom domain → enter dezzimode.studio and follow prompts.
-4. Netlify will provide instructions for DNS records. Add the records at your domain provider (Squarespace or new registrar). Netlify will also enable HTTPS automatically.
+Deploy to GitHub Pages (current setup — no third-party host)
+The repo builds and deploys itself via `.github/workflows/deploy-pages.yml` on every
+push to `main`. It stages **only** `index.html`, `styles.css`, and `script.js` into the
+published output — `studio.html` and `archive/` are never copied into the deploy, so
+they stay out of the live site even though the repo itself is public.
 
-Quick DNS notes for Netlify (if you keep the domain at Squarespace and can edit DNS there):
-- For the apex (dezzimode.studio), add the A records Netlify shows (or use Netlify DNS).
-- For the www subdomain, add a CNAME pointing to your Netlify site (example: yoursite.netlify.app).
+One-time setup (in the GitHub repo, not here):
+1. Settings → Pages → Build and deployment → Source: **GitHub Actions** (not "Deploy from a branch").
+2. Settings → Pages → Custom domain → enter `dezzimode.studio` → Save. (The workflow
+   also writes a `CNAME` file into the deploy automatically, so this should already show
+   up as verified after the first successful run.)
+3. Point DNS at GitHub Pages instead of Netlify, at your domain's DNS provider:
+   - Apex (`dezzimode.studio`): four **A** records to `185.199.108.153`, `185.199.109.153`,
+     `185.199.110.153`, `185.199.111.153`.
+   - `www` subdomain (optional): **CNAME** to `<your-github-username>.github.io`.
+4. Once DNS propagates, check "Enforce HTTPS" under Settings → Pages — GitHub issues the
+   certificate automatically.
+5. Disconnect/delete the Netlify site once Pages is confirmed live, so nothing is still
+   silently building there.
+
+This only goes live once the redesign branch is merged into `main` — the workflow does
+nothing until then.
 
 Contact form
 - Already wired up to Formspree (`https://formspree.io/f/xjybzyvg`) — both
