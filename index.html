@@ -3,83 +3,139 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dezzimode — Home</title>
+  <title>DEZZI MODE — Make Them Look.</title>
+  <meta name="description" content="Dezzi Mode — streetwear graphics, custom apparel, screen print files, stickers, and limited art prints. Shipped from Kenai, Alaska." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Wet+Paint&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="#">Dezzimode</a>
-      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
-      <nav class="nav" id="nav">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-      </nav>
+
+  <nav class="gnav" id="nav-bar">
+    <a href="#top" class="gnav-mark">DEZZI</a>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <div class="gnav-links" id="nav">
+      <a href="#label">Label</a>
+      <a href="#lookbook">Lookbook</a>
+      <a href="#drop">Drop</a>
+      <a href="#contact">Contact</a>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <section id="home" class="hero container">
-      <h1>Welcome to Dezzimode</h1>
-      <p>Design-forward products and services for your creative life.</p>
-      <a class="btn" href="#contact">Get in touch</a>
+  <main id="top">
+
+    <!-- ░░ HERO — FULL-BLEED ░░ -->
+    <section class="bleed bleed-void hero">
+      <div class="halftone" aria-hidden="true"></div>
+      <div class="hero-type">
+        <h1 class="mega">MAKE<br>THEM<br><span class="mega-accent">LOOK.</span></h1>
+      </div>
+      <div class="tag tag-red tag-1" aria-hidden="true">DEZZI MODE</div>
+      <div class="tag tag-teal tag-2" aria-hidden="true">EST. ALASKA</div>
+      <p class="scroll-cue">scroll ↓</p>
+      <div class="torn" style="--edge:#008080" aria-hidden="true"></div>
     </section>
 
-    <section id="about" class="container section">
-      <h2>About</h2>
-      <p>Dezzimode is a small business focused on original designs and custom work. Write a short paragraph here about your story, mission, or what makes you different.</p>
+    <!-- ░░ LABEL / MANIFESTO — FULL-BLEED TEAL ░░ -->
+    <section id="label" class="bleed bleed-electric manifesto">
+      <p class="eyebrow eyebrow-dark">// THE LABEL</p>
+      <p class="pull-quote reveal">
+        Designs go from screen to something you can wear, carry, and collect.
+        Graphic tees. Sticker packs. Art prints. Screen print files. Custom apparel.
+        <span class="tag tag-inline tag-void">small runs, big energy.</span>
+        Shipped from Alaska with a thank-you note in every package.
+      </p>
+      <div class="torn" style="--edge:#0D0D0D" aria-hidden="true"></div>
     </section>
 
-    <section id="services" class="container section">
-      <h2>Services</h2>
-      <ul class="services">
-        <li>
-          <h3>Service One</h3>
-          <p>Short description of this service.</p>
-        </li>
-        <li>
-          <h3>Service Two</h3>
-          <p>Short description of this service.</p>
-        </li>
-      </ul>
+    <!-- ░░ LOOKBOOK INDEX ░░ -->
+    <section id="lookbook" class="lookbook">
+      <div class="lb-row lb-paper reveal">
+        <span class="lb-ghost lb-ghost-red">01</span>
+        <h3 class="lb-name">Streetwear Graphic Design</h3>
+        <p class="lb-desc">Drop-ready apparel graphics</p>
+      </div>
+      <div class="lb-row lb-void reveal">
+        <span class="lb-ghost lb-ghost-teal">02</span>
+        <h3 class="lb-name">Custom Apparel</h3>
+        <p class="lb-desc">Tees, hoodies, hats — small batch</p>
+      </div>
+      <div class="lb-row lb-paper reveal">
+        <span class="lb-ghost lb-ghost-red">03</span>
+        <h3 class="lb-name">Screen Print &amp; Embroidery Files</h3>
+        <p class="lb-desc">Production-ready art files</p>
+      </div>
+      <div class="lb-row lb-void reveal">
+        <span class="lb-ghost lb-ghost-teal">04</span>
+        <h3 class="lb-name">Labels, Stickers &amp; Decals</h3>
+        <p class="lb-desc">Vinyl, holographic, weatherproof</p>
+      </div>
+      <div class="lb-row lb-paper reveal">
+        <span class="lb-ghost lb-ghost-red">05</span>
+        <h3 class="lb-name">Art Prints &amp; Collectibles</h3>
+        <p class="lb-desc">Signed, numbered, limited</p>
+      </div>
     </section>
 
-    <section id="blog" class="container section">
-      <h2>Blog</h2>
-      <p>Coming soon — posts and updates about Dezzimode.</p>
-    </section>
-
-    <section id="contact" class="container section">
-      <h2>Contact</h2>
-      <p>Fill out the form below and we will get back to you — or email us at <a href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>.</p>
-
-      <!-- To use a working form, sign up at Formspree.io (or similar) and replace the action URL -->
-      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <label>
-          Your name
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button type="submit" class="btn">Send</button>
-        <p id="form-status" class="form-status" aria-live="polite"></p>
+    <!-- ░░ DROP — FULL-BLEED VENOM ░░ -->
+    <section id="drop" class="bleed bleed-venom drop">
+      <div class="halftone halftone-dark" aria-hidden="true"></div>
+      <p class="eyebrow">// FIRST DROP</p>
+      <h2 class="mega mega-tight">COMING<br>SOON.</h2>
+      <div class="tag tag-void tag-3" aria-hidden="true">LIMITED. NO RESTOCKS.</div>
+      <form id="notify-form" class="street-form" action="https://formspree.io/f/xjybzyvg" method="POST">
+        <input type="hidden" name="form_type" value="Get Notified — Dezzi Mode Drop" />
+        <label class="visually-hidden" for="notify-email">Email address</label>
+        <input id="notify-email" type="email" name="email" placeholder="YOUR@EMAIL.COM" required />
+        <button type="submit" class="btn-stamp">GET NOTIFIED</button>
       </form>
+      <p id="notify-status" class="form-status" aria-live="polite"></p>
+      <div class="torn" style="--edge:#0D0D0D" aria-hidden="true"></div>
+    </section>
+
+    <!-- ░░ CONTACT — FULL-BLEED VOID ░░ -->
+    <section id="contact" class="bleed bleed-void contact">
+      <p class="eyebrow eyebrow-teal">// TALK TO US</p>
+      <h2 class="mega mega-tight">LET'S<br><span class="mega-accent-teal">BUILD.</span></h2>
+      <div class="contact-grid reveal">
+        <div class="contact-block">
+          <span class="contact-label">Email</span>
+          <a class="contact-value" href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>
+        </div>
+        <div class="contact-block">
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Kenai, Alaska</span>
+        </div>
+        <div class="contact-block">
+          <span class="contact-label">Instagram</span>
+          <a class="contact-value" href="https://instagram.com/dezzi_simply_iconic" target="_blank" rel="noopener">@dezzi_simply_iconic</a>
+        </div>
+        <div class="contact-block">
+          <span class="contact-label">Site</span>
+          <a class="contact-value" href="https://dezzimode.studio" target="_blank" rel="noopener">dezzimode.studio</a>
+        </div>
+      </div>
+
+      <form id="contact-form" class="street-form street-form-stacked" action="https://formspree.io/f/xjybzyvg" method="POST">
+        <input type="hidden" name="form_type" value="Contact — Dezzi Mode" />
+        <label class="visually-hidden" for="cf-name">Your name</label>
+        <input id="cf-name" type="text" name="name" placeholder="NAME" required />
+        <label class="visually-hidden" for="cf-email">Email</label>
+        <input id="cf-email" type="email" name="email" placeholder="EMAIL" required />
+        <label class="visually-hidden" for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="3" placeholder="MESSAGE"></textarea>
+        <button type="submit" class="btn-stamp btn-stamp-teal">SEND</button>
+      </form>
+      <p id="form-status" class="form-status" aria-live="polite"></p>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Dezzimode — All rights reserved.</p>
-    </div>
+    <span>© <span id="year"></span> DEZZI MODE</span>
+    <span class="footer-tag">MAKE THEM LOOK.</span>
   </footer>
 
   <script src="script.js"></script>

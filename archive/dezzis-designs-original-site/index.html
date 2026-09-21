@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DEZZI · Simply Iconic</title>
+<meta name="description" content="Dezzi's Designs — Brand Studio. Dezzi Mode — Fashion Label. Two brands. One vision. Built in Kenai, Alaska.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;0,900;1,700&family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ░░ PARTICLE CANVAS ░░ -->
+<canvas id="sparkCanvas" aria-hidden="true"></canvas>
+
+<!-- ░░ TOP BANNER ░░ -->
+<div class="master-banner">
+  <span class="banner-gem" aria-hidden="true">◆</span>
+  <span class="banner-text">DEZZI: Simply Iconic.</span>
+  <span class="banner-gem" aria-hidden="true">◆</span>
+</div>
+
+<!-- ░░ GLOBAL NAV ░░ -->
+<nav class="global-nav" id="gnav">
+  <a href="#top" class="nav-wordmark">
+    <svg viewBox="0 0 44 44" width="26" height="26" aria-hidden="true">
+      <defs>
+        <linearGradient id="navGem" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#00E5EA"/>
+          <stop offset="100%" stop-color="#FF1A2E"/>
+        </linearGradient>
+      </defs>
+      <path d="M22 3 L41 22 L22 41 L3 22 Z" fill="none" stroke="url(#navGem)" stroke-width="1.6"/>
+      <path d="M22 11 L31 22 L22 33 L13 22 Z" fill="url(#navGem)" opacity="0.7"/>
+    </svg>
+    <span>DEZZI</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#studio">Studio</a></li>
+    <li><a href="#mode">Mode</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="/cdn-cgi/l/email-protection#2c44494040436c48495656455f48495f454b425f025f5859484543" class="nav-cta">Work With Me</a>
+</nav>
+
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░ HERO — SPLIT TWO-DOOR ░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<section class="split-hero" id="top">
+
+  <!-- ════ LEFT: DEZZI'S DESIGNS ════ -->
+  <a href="#studio" class="door door-left" aria-label="Enter Dezzi's Designs studio">
+
+    <!-- Diamond texture field -->
+    <div class="door-texture" aria-hidden="true">
+      <svg viewBox="0 0 900 900" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+        <defs>
+          <pattern id="ddDiamonds" x="0" y="0" width="90" height="90" patternUnits="userSpaceOnUse">
+            <path d="M45 6 L84 45 L45 84 L6 45 Z" fill="none" stroke="#8ED2CC" stroke-width="0.7" opacity="0.22"/>
+            <path d="M45 18 L72 45 L45 72 L18 45 Z" fill="none" stroke="#D7F1EE" stroke-width="0.4" opacity="0.15"/>
+            <circle cx="45" cy="45" r="1.2" fill="#D7F1EE" opacity="0.5"/>
+          </pattern>
+          <linearGradient id="ddTexGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#0a1f22"/>
+            <stop offset="60%" stop-color="#0B4F57"/>
+            <stop offset="100%" stop-color="#062730"/>
+          </linearGradient>
+          <radialGradient id="ddSpotlight" cx="50%" cy="55%" r="60%">
+            <stop offset="0%" stop-color="#0B4F57" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#020202" stop-opacity="0.65"/>
+          </radialGradient>
+        </defs>
+        <rect width="900" height="900" fill="url(#ddTexGrad)"/>
+        <rect width="900" height="900" fill="url(#ddDiamonds)"/>
+        <rect width="900" height="900" fill="url(#ddSpotlight)"/>
+        <!-- Large ghost diamond accent -->
+        <path d="M450 80 L820 450 L450 820 L80 450 Z" fill="none" stroke="#8ED2CC" stroke-width="0.6" opacity="0.08"/>
+        <path d="M450 160 L740 450 L450 740 L160 450 Z" fill="none" stroke="#D7F1EE" stroke-width="0.4" opacity="0.06"/>
+        <!-- Sparkle stars -->
+        <g fill="#D7F1EE" opacity="0.6">
+          <path d="M120 180 L122 186 L128 188 L122 190 L120 196 L118 190 L112 188 L118 186 Z"/>
+          <path d="M780 280 L782 285 L787 287 L782 289 L780 294 L778 289 L773 287 L778 285 Z"/>
+          <path d="M200 680 L201.5 684 L206 685.5 L201.5 687 L200 691 L198.5 687 L194 685.5 L198.5 684 Z"/>
+          <path d="M700 120 L701.5 124 L706 125.5 L701.5 127 L700 131 L698.5 127 L694 125.5 L698.5 124 Z"/>
+          <path d="M820 620 L822 626 L828 628 L822 630 L820 636 L818 630 L812 628 L818 626 Z"/>
+          <path d="M60 400 L61.5 404 L66 405.5 L61.5 407 L60 411 L58.5 407 L54 405.5 L58.5 404 Z"/>
+        </g>
+        <!-- Silver shimmer line -->
+        <line x1="0" y1="450" x2="900" y2="450" stroke="#8ED2CC" stroke-width="0.3" opacity="0.12"/>
+        <line x1="450" y1="0" x2="450" y2="900" stroke="#8ED2CC" stroke-width="0.3" opacity="0.12"/>
+      </svg>
+    </div>
+
+    <!-- Floating diamond dust -->
+    <div class="door-shimmer dd-shimmer" aria-hidden="true"></div>
+
+    <div class="door-inner">
+      <!-- Big badge gem -->
+      <div class="hero-gem dd-gem" aria-hidden="true">
+        <svg viewBox="0 0 260 310" width="200" height="238">
+          <defs>
+            <linearGradient id="ddBadge" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#D7F1EE"/>
+              <stop offset="35%" stop-color="#8ED2CC"/>
+              <stop offset="70%" stop-color="#0B4F57"/>
+              <stop offset="100%" stop-color="#041f22"/>
+            </linearGradient>
+            <linearGradient id="ddSilver" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#ffffff"/>
+              <stop offset="40%" stop-color="#c8e8e4"/>
+              <stop offset="100%" stop-color="#6ab8b2"/>
+            </linearGradient>
+            <filter id="ddGlow">
+              <feGaussianBlur stdDeviation="6" result="blur"/>
+              <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+            </filter>
+            <radialGradient id="ddAura" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#8ED2CC" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#0B4F57" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <!-- Aura glow -->
+          <ellipse cx="130" cy="155" rx="110" ry="130" fill="url(#ddAura)" filter="url(#ddGlow)"/>
+          <!-- Outer diamond silhouette -->
+          <path d="M130 14 L242 155 L130 296 L18 155 Z" fill="none" stroke="url(#ddSilver)" stroke-width="2"/>
+          <!-- Facet fill -->
+          <path d="M130 28 L230 155 L130 282 L30 155 Z" fill="url(#ddBadge)" opacity="0.22"/>
+          <!-- Facet lines -->
+          <path d="M130 28 L130 282" stroke="#D7F1EE" stroke-width="0.7" opacity="0.4"/>
+          <path d="M30 155 L230 155" stroke="#D7F1EE" stroke-width="0.7" opacity="0.4"/>
+          <path d="M130 28 L80 100 L130 155 L180 100 Z" fill="#8ED2CC" opacity="0.28"/>
+          <path d="M130 282 L80 210 L130 155 L180 210 Z" fill="#0B4F57" opacity="0.5"/>
+          <path d="M30 155 L80 100 L130 155 L80 210 Z" fill="#0B4F57" opacity="0.25"/>
+          <path d="M230 155 L180 100 L130 155 L180 210 Z" fill="#8ED2CC" opacity="0.18"/>
+          <!-- Sparkle at top -->
+          <path d="M130 14 L132 6 L134 14 L142 16 L134 18 L132 26 L130 18 L122 16 Z" fill="#ffffff" opacity="0.95"/>
+          <!-- Sparkles at facet corners -->
+          <circle cx="30" cy="155" r="2.5" fill="#D7F1EE" opacity="0.8"/>
+          <circle cx="230" cy="155" r="2.5" fill="#D7F1EE" opacity="0.8"/>
+          <circle cx="130" cy="282" r="2" fill="#8ED2CC" opacity="0.7"/>
+          <!-- DD Monogram -->
+          <text x="130" y="172" text-anchor="middle" font-family="Playfair Display, serif" font-size="68" font-weight="900" fill="#ffffff" letter-spacing="-3" opacity="0.95">DD</text>
+          <!-- Silver rim sparkles -->
+          <circle cx="130" cy="14" r="3" fill="#ffffff" opacity="0.9"/>
+        </svg>
+      </div>
+
+      <div class="door-eyebrow dd-eyebrow">Est. Kenai, Alaska</div>
+      <h1 class="door-title dd-title">Dezzi's<br><em>Designs</em></h1>
+      <p class="door-tag dd-tag">Your Brand. Done Right.</p>
+      <div class="door-cta dd-cta">
+        <span>Enter Studio</span>
+        <span class="cta-diamond">◆</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- CENTER DIVIDER -->
+  <div class="split-divider" aria-hidden="true">
+    <div class="divider-line"></div>
+    <div class="divider-gem">
+      <svg viewBox="0 0 50 60" width="36" height="43">
+        <defs>
+          <linearGradient id="divGem" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#D7F1EE"/>
+            <stop offset="50%" stop-color="#8ED2CC"/>
+            <stop offset="100%" stop-color="#0B4F57"/>
+          </linearGradient>
+        </defs>
+        <path d="M25 4 L46 30 L25 56 L4 30 Z" fill="none" stroke="url(#divGem)" stroke-width="1.5"/>
+        <path d="M25 12 L38 30 L25 48 L12 30 Z" fill="url(#divGem)" opacity="0.4"/>
+      </svg>
+    </div>
+    <div class="divider-line"></div>
+  </div>
+
+  <!-- ════ RIGHT: DEZZI MODE ════ -->
+  <a href="#mode" class="door door-right" aria-label="Enter Dezzi Mode">
+
+    <!-- Gem scatter texture -->
+    <div class="door-texture" aria-hidden="true">
+      <svg viewBox="0 0 900 900" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+        <defs>
+          <pattern id="modeGems" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <path d="M50 8 L80 50 L50 92 L20 50 Z" fill="none" stroke="#00C8CC" stroke-width="0.6" opacity="0.18"/>
+            <path d="M50 20 L68 50 L50 80 L32 50 Z" fill="none" stroke="#FF1A2E" stroke-width="0.4" opacity="0.12"/>
+            <circle cx="50" cy="8" r="1.2" fill="#00E5EA" opacity="0.5"/>
+          </pattern>
+          <radialGradient id="modeSpotlight" cx="50%" cy="45%" r="65%">
+            <stop offset="0%" stop-color="#0D0D0D" stop-opacity="0"/>
+            <stop offset="100%" stop-color="#020202" stop-opacity="0.8"/>
+          </radialGradient>
+        </defs>
+        <rect width="900" height="900" fill="#020202"/>
+        <rect width="900" height="900" fill="url(#modeGems)"/>
+        <rect width="900" height="900" fill="url(#modeSpotlight)"/>
+        <!-- Big ghost gem -->
+        <path d="M450 60 L840 450 L450 840 L60 450 Z" fill="none" stroke="#00C8CC" stroke-width="0.7" opacity="0.07"/>
+        <path d="M450 150 L750 450 L450 750 L150 450 Z" fill="none" stroke="#FF1A2E" stroke-width="0.5" opacity="0.05"/>
+        <!-- Neon accent lines -->
+        <line x1="450" y1="0" x2="450" y2="60" stroke="#00E5EA" stroke-width="1" opacity="0.4"/>
+        <line x1="450" y1="840" x2="450" y2="900" stroke="#00C8CC" stroke-width="1" opacity="0.3"/>
+        <!-- Red spark top -->
+        <circle cx="450" cy="60" r="3" fill="#FF1A2E" opacity="0.7"/>
+        <!-- Teal dot bottom -->
+        <circle cx="450" cy="840" r="3" fill="#00E5EA" opacity="0.6"/>
+        <!-- Scattered neon sparkles -->
+        <g fill="#00E5EA" opacity="0.55">
+          <path d="M150 200 L152 207 L159 209 L152 211 L150 218 L148 211 L141 209 L148 207 Z"/>
+          <path d="M750 680 L752 686 L758 688 L752 690 L750 696 L748 690 L742 688 L748 686 Z"/>
+          <path d="M820 200 L821.5 204 L826 205.5 L821.5 207 L820 211 L818.5 207 L814 205.5 L818.5 204 Z"/>
+        </g>
+        <g fill="#FF1A2E" opacity="0.5">
+          <path d="M80 600 L82 606 L88 608 L82 610 L80 616 L78 610 L72 608 L78 606 Z"/>
+          <path d="M700 150 L701.5 154 L706 155.5 L701.5 157 L700 161 L698.5 157 L694 155.5 L698.5 154 Z"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="door-shimmer dm-shimmer" aria-hidden="true"></div>
+
+    <div class="door-inner">
+      <!-- Neon Wireframe Gem -->
+      <div class="hero-gem dm-gem" aria-hidden="true">
+        <img src="dezzi_mode_gem.png" alt="Dezzi Mode" class="dm-logo-img"/>
+      </div>
+
+      <h1 class="door-title dm-title">DEZZI<br>MODE</h1>
+      <p class="door-tag dm-tag">MAKE THEM LOOK.</p>
+      <div class="door-cta dm-cta">
+        <span>Enter Mode</span>
+        <span class="cta-neon">◈</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Scroll hint -->
+  <div class="hero-scroll" aria-hidden="true">
+    <span class="scroll-dot"></span>
+    <span class="scroll-line"></span>
+  </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░ STUDIO SECTION ░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<section class="studio-section" id="studio">
+
+  <!-- Diamond texture bg -->
+  <div class="section-bg" aria-hidden="true">
+    <svg viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+      <defs>
+        <pattern id="studioDiamonds" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+          <path d="M40 5 L75 40 L40 75 L5 40 Z" fill="none" stroke="#8ED2CC" stroke-width="0.5" opacity="0.12"/>
+          <circle cx="40" cy="5" r="0.8" fill="#D7F1EE" opacity="0.3"/>
+        </pattern>
+      </defs>
+      <rect width="1400" height="900" fill="#071c1f"/>
+      <rect width="1400" height="900" fill="url(#studioDiamonds)"/>
+      <!-- Corner accent sparkles -->
+      <path d="M80 80 L83 70 L86 80 L96 83 L86 86 L83 96 L80 86 L70 83 Z" fill="#8ED2CC" opacity="0.35"/>
+      <path d="M1320 820 L1322 813 L1324 820 L1331 822 L1324 824 L1322 831 L1320 824 L1313 822 Z" fill="#D7F1EE" opacity="0.3"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <!-- Section header -->
+    <div class="section-head reveal">
+      <div class="section-tag studio-tag">
+        <svg viewBox="0 0 24 28" width="14" height="16" aria-hidden="true">
+          <path d="M12 2 L22 14 L12 26 L2 14 Z" fill="none" stroke="#8ED2CC" stroke-width="1.5"/>
+          <path d="M12 6 L18 14 L12 22 L6 14 Z" fill="#8ED2CC" opacity="0.5"/>
+        </svg>
+        Dezzi's Designs — The Studio
+      </div>
+      <h2 class="section-title studio-title">
+        Your Brand.<br><em class="studio-em">Done Right.</em>
+      </h2>
+      <p class="section-lede">
+        Dezzi's Designs is the full-service creative studio for small businesses, solopreneurs, and entrepreneurs who are done playing small. Logos, full brand systems, website refreshes, social templates — everything you need to look as serious as you are. Built in Kenai, Alaska. Shipped everywhere.
+      </p>
+    </div>
+
+    <!-- Services grid -->
+    <div class="services-grid">
+
+      <article class="service-card reveal">
+        <div class="service-gem" aria-hidden="true">
+          <svg viewBox="0 0 60 68" width="44" height="50">
+            <defs>
+              <linearGradient id="sg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#D7F1EE"/>
+                <stop offset="100%" stop-color="#0B4F57"/>
+              </linearGradient>
+            </defs>
+            <path d="M30 4 L56 34 L30 64 L4 34 Z" fill="none" stroke="url(#sg1)" stroke-width="1.4"/>
+            <path d="M30 14 L46 34 L30 54 L14 34 Z" fill="url(#sg1)" opacity="0.25"/>
+            <circle cx="30" cy="4" r="2" fill="#D7F1EE"/>
+          </svg>
+        </div>
+        <div class="service-num">01</div>
+        <h3>Brand Identity & Logos</h3>
+        <p>Logo, secondary marks, color systems, type hierarchy — the full strategic visual foundation for your business.</p>
+        <div class="card-price">From $450</div>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-gem" aria-hidden="true">
+          <svg viewBox="0 0 60 68" width="44" height="50">
+            <path d="M30 4 L56 34 L30 64 L4 34 Z" fill="none" stroke="url(#sg1)" stroke-width="1.4"/>
+            <path d="M30 14 L46 34 L30 54 L14 34 Z" fill="url(#sg1)" opacity="0.25"/>
+            <circle cx="30" cy="4" r="2" fill="#D7F1EE"/>
+          </svg>
+        </div>
+        <div class="service-num">02</div>
+        <h3>Web Design & Builds</h3>
+        <p>Beautiful, conversion-focused sites that reflect your brand — concept through launch. Squarespace, custom HTML, or both.</p>
+        <div class="card-price">Quote on scope</div>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-gem" aria-hidden="true">
+          <svg viewBox="0 0 60 68" width="44" height="50">
+            <path d="M30 4 L56 34 L30 64 L4 34 Z" fill="none" stroke="url(#sg1)" stroke-width="1.4"/>
+            <path d="M30 14 L46 34 L30 54 L14 34 Z" fill="url(#sg1)" opacity="0.25"/>
+            <circle cx="30" cy="4" r="2" fill="#D7F1EE"/>
+          </svg>
+        </div>
+        <div class="service-num">03</div>
+        <h3>Social Media Strategy</h3>
+        <p>Content systems, scheduling, and visual storytelling that builds audiences and trust — not just likes.</p>
+        <div class="card-price">From $350</div>
+      </article>
+
+      <article class="service-card reveal">
+        <div class="service-gem" aria-hidden="true">
+          <svg viewBox="0 0 60 68" width="44" height="50">
+            <path d="M30 4 L56 34 L30 64 L4 34 Z" fill="none" stroke="url(#sg1)" stroke-width="1.4"/>
+            <path d="M30 14 L46 34 L30 54 L14 34 Z" fill="url(#sg1)" opacity="0.25"/>
+            <circle cx="30" cy="4" r="2" fill="#D7F1EE"/>
+          </svg>
+        </div>
+        <div class="service-num">04</div>
+        <h3>Everything Else</h3>
+        <p>Stickers, decals, apparel graphics, packaging, flyers, event materials — if it needs a design, we build it.</p>
+        <div class="card-price">From $150</div>
+      </article>
+
+    </div>
+
+    <!-- Pricing callout -->
+    <div class="pricing-strip reveal" id="pricing">
+      <div class="pricing-gem" aria-hidden="true">◆</div>
+      <div class="pricing-tiers">
+        <div class="tier">
+          <div class="tier-name">Logo Only</div>
+          <div class="tier-price">$450</div>
+          <div class="tier-note">3 concepts · 2 rounds</div>
+        </div>
+        <div class="tier-divider">◆</div>
+        <div class="tier">
+          <div class="tier-name">Mini Brand</div>
+          <div class="tier-price">$950</div>
+          <div class="tier-note">Logo + palette + 3 social templates</div>
+        </div>
+        <div class="tier-divider">◆</div>
+        <div class="tier">
+          <div class="tier-name">Full Brand System</div>
+          <div class="tier-price">$1,800+</div>
+          <div class="tier-note">Logo · color · type · guide · socials</div>
+        </div>
+        <div class="tier-divider">◆</div>
+        <div class="tier">
+          <div class="tier-name">Social Templates</div>
+          <div class="tier-price">$350</div>
+          <div class="tier-note">Ready to post, matched to your brand</div>
+        </div>
+      </div>
+      <div class="pricing-gem" aria-hidden="true">◆</div>
+    </div>
+
+    <div class="studio-cta reveal">
+      <p class="cta-lede">Ready to look as serious as you are?</p>
+      <div class="cta-row">
+        <a href="/cdn-cgi/l/email-protection#7a121f1616153a1e1f000013091e1f09131d140954090e0f1e1315" class="btn btn-studio">
+          Work With Me <span class="btn-gem">◆</span>
+        </a>
+        <a href="/cdn-cgi/l/email-protection#c1a9a4adadae81a5a4bbbba8b2a5a4b2a8a6afb2efb2b5b4a5a8ae" class="btn-email"><span class="__cf_email__" data-cfemail="95fdf0f9f9fad5f1f0efeffce6f1f0e6fcf2fbe6bbe6e1e0f1fcfa">[email&#160;protected]</span></a>
+      </div>
+      <div class="social-row">
+        <a href="https://instagram.com/dezzi_iconic" target="_blank" rel="noopener" class="social-link">
+          IG @dezzi_iconic
+        </a>
+        <span class="social-sep">◆</span>
+        <a href="https://dezzisdesigns.studio" target="_blank" rel="noopener" class="social-link">
+          dezzisdesigns.studio
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░ MODE SECTION ░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<section class="mode-section" id="mode">
+
+  <div class="mode-bg" aria-hidden="true">
+    <svg viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+      <defs>
+        <!-- Dense wireframe gem grid -->
+        <pattern id="modeGemGrid" x="0" y="0" width="80" height="90" patternUnits="userSpaceOnUse">
+          <path d="M40 6 L70 45 L40 84 L10 45 Z" fill="none" stroke="#00C8CC" stroke-width="0.8" opacity="0.22"/>
+          <path d="M40 18 L58 45 L40 72 L22 45 Z" fill="none" stroke="#00E5EA" stroke-width="0.4" opacity="0.14"/>
+          <circle cx="40" cy="6" r="1.2" fill="#00E5EA" opacity="0.55"/>
+          <circle cx="40" cy="84" r="0.8" fill="#00C8CC" opacity="0.3"/>
+        </pattern>
+        <!-- Sparse red gem grid offset -->
+        <pattern id="modeRedGrid" x="40" y="45" width="80" height="90" patternUnits="userSpaceOnUse">
+          <path d="M40 6 L70 45 L40 84 L10 45 Z" fill="none" stroke="#FF1A2E" stroke-width="0.6" opacity="0.14"/>
+          <circle cx="40" cy="6" r="1" fill="#FF1A2E" opacity="0.4"/>
+        </pattern>
+        <radialGradient id="modeSecGrad" cx="50%" cy="50%" r="70%">
+          <stop offset="0%" stop-color="#0d0d0d"/>
+          <stop offset="100%" stop-color="#020202"/>
+        </radialGradient>
+        <radialGradient id="modeTealGlow" cx="20%" cy="30%" r="45%">
+          <stop offset="0%" stop-color="#00C8CC" stop-opacity="0.07"/>
+          <stop offset="100%" stop-color="#00C8CC" stop-opacity="0"/>
+        </radialGradient>
+        <radialGradient id="modeRedGlow" cx="80%" cy="70%" r="40%">
+          <stop offset="0%" stop-color="#FF1A2E" stop-opacity="0.07"/>
+          <stop offset="100%" stop-color="#FF1A2E" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <rect width="1400" height="900" fill="url(#modeSecGrad)"/>
+      <rect width="1400" height="900" fill="url(#modeGemGrid)"/>
+      <rect width="1400" height="900" fill="url(#modeRedGrid)"/>
+      <!-- Atmospheric glow pools -->
+      <rect width="1400" height="900" fill="url(#modeTealGlow)"/>
+      <rect width="1400" height="900" fill="url(#modeRedGlow)"/>
+      <!-- Neon scan lines -->
+      <line x1="0" y1="180" x2="1400" y2="180" stroke="#00C8CC" stroke-width="0.6" opacity="0.1"/>
+      <line x1="0" y1="540" x2="1400" y2="540" stroke="#FF1A2E" stroke-width="0.5" opacity="0.09"/>
+      <line x1="0" y1="720" x2="1400" y2="720" stroke="#00C8CC" stroke-width="0.4" opacity="0.07"/>
+      <!-- Large ghost gem overlay -->
+      <path d="M700 60 L1320 450 L700 840 L80 450 Z" fill="none" stroke="#00C8CC" stroke-width="1" opacity="0.06"/>
+      <path d="M700 160 L1200 450 L700 740 L200 450 Z" fill="none" stroke="#FF1A2E" stroke-width="0.7" opacity="0.05"/>
+      <!-- Big corner sparkle stars -->
+      <path d="M1300 80 L1304 68 L1308 80 L1320 84 L1308 88 L1304 100 L1300 88 L1288 84 Z" fill="#00E5EA" opacity="0.55"/>
+      <path d="M80 820 L84 810 L88 820 L98 824 L88 828 L84 838 L80 828 L70 824 Z" fill="#FF1A2E" opacity="0.5"/>
+      <path d="M100 100 L103 93 L106 100 L113 103 L106 106 L103 113 L100 106 L93 103 Z" fill="#00C8CC" opacity="0.45"/>
+      <path d="M1280 800 L1283 793 L1286 800 L1293 803 L1286 806 L1283 813 L1280 806 L1273 803 Z" fill="#FF1A2E" opacity="0.4"/>
+      <!-- Scattered gem dots -->
+      <circle cx="200" cy="150" r="2" fill="#00E5EA" opacity="0.5"/>
+      <circle cx="1150" cy="200" r="1.5" fill="#FF1A2E" opacity="0.45"/>
+      <circle cx="350" cy="750" r="2" fill="#00C8CC" opacity="0.4"/>
+      <circle cx="1050" cy="680" r="1.5" fill="#00E5EA" opacity="0.45"/>
+      <circle cx="600" cy="80" r="1.8" fill="#FF1A2E" opacity="0.4"/>
+      <circle cx="900" cy="820" r="2" fill="#00E5EA" opacity="0.5"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="section-tag mode-tag">
+        <svg viewBox="0 0 24 28" width="14" height="16" aria-hidden="true">
+          <defs>
+            <linearGradient id="modeTagGem" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF1A2E"/>
+              <stop offset="100%" stop-color="#00C8CC"/>
+            </linearGradient>
+          </defs>
+          <path d="M12 2 L22 14 L12 26 L2 14 Z" fill="none" stroke="url(#modeTagGem)" stroke-width="1.5"/>
+          <path d="M12 6 L18 14 L12 22 L6 14 Z" fill="url(#modeTagGem)" opacity="0.5"/>
+        </svg>
+        Dezzi Mode — The Label
+      </div>
+      <h2 class="section-title mode-title">
+        MAKE THEM<br><span class="mode-accent">LOOK.</span>
+      </h2>
+      <p class="section-lede mode-lede">
+        Dezzi Mode is the merch arm — where designs go from screen to something you can wear, carry, and collect. Graphic tees, sticker packs, art prints, screen print files, custom apparel. Small runs, big energy. Shipped from Alaska with a thank-you note in every package.
+      </p>
+      <p class="section-lede mode-lede" style="margin-top:1em;">
+        First drop is in the works. Limited quantities. When it's gone, it's gone.
+      </p>
+    </div>
+
+    <!-- Category blocks -->
+    <div class="mode-categories">
+      <div class="mode-cat reveal">
+        <div class="cat-gem">
+          <svg viewBox="0 0 50 58" width="32" height="37">
+            <defs>
+              <linearGradient id="catGem1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FF1A2E"/>
+                <stop offset="100%" stop-color="#00C8CC"/>
+              </linearGradient>
+            </defs>
+            <path d="M25 3 L47 29 L25 55 L3 29 Z" fill="none" stroke="url(#catGem1)" stroke-width="1.5"/>
+            <path d="M25 11 L39 29 L25 47 L11 29 Z" fill="url(#catGem1)" opacity="0.3"/>
+            <circle cx="25" cy="3" r="2" fill="#FF1A2E"/>
+          </svg>
+        </div>
+        <span class="cat-num">01</span>
+        <span class="cat-name">STREETWEAR GRAPHIC DESIGN</span>
+        <span class="cat-desc">Drop-ready apparel graphics</span>
+      </div>
+      <div class="mode-cat reveal">
+        <div class="cat-gem">
+          <svg viewBox="0 0 50 58" width="32" height="37">
+            <path d="M25 3 L47 29 L25 55 L3 29 Z" fill="none" stroke="url(#catGem1)" stroke-width="1.5"/>
+            <path d="M25 11 L39 29 L25 47 L11 29 Z" fill="url(#catGem1)" opacity="0.3"/>
+            <circle cx="25" cy="3" r="2" fill="#00E5EA"/>
+          </svg>
+        </div>
+        <span class="cat-num">02</span>
+        <span class="cat-name">CUSTOM APPAREL</span>
+        <span class="cat-desc">Tees, hoodies, hats — small batch</span>
+      </div>
+      <div class="mode-cat reveal">
+        <div class="cat-gem">
+          <svg viewBox="0 0 50 58" width="32" height="37">
+            <path d="M25 3 L47 29 L25 55 L3 29 Z" fill="none" stroke="url(#catGem1)" stroke-width="1.5"/>
+            <path d="M25 11 L39 29 L25 47 L11 29 Z" fill="url(#catGem1)" opacity="0.3"/>
+            <circle cx="25" cy="3" r="2" fill="#FF1A2E"/>
+          </svg>
+        </div>
+        <span class="cat-num">03</span>
+        <span class="cat-name">SCREEN PRINT &amp; EMBROIDERY FILES</span>
+        <span class="cat-desc">Production-ready art files</span>
+      </div>
+      <div class="mode-cat reveal">
+        <div class="cat-gem">
+          <svg viewBox="0 0 50 58" width="32" height="37">
+            <path d="M25 3 L47 29 L25 55 L3 29 Z" fill="none" stroke="url(#catGem1)" stroke-width="1.5"/>
+            <path d="M25 11 L39 29 L25 47 L11 29 Z" fill="url(#catGem1)" opacity="0.3"/>
+            <circle cx="25" cy="3" r="2" fill="#00E5EA"/>
+          </svg>
+        </div>
+        <span class="cat-num">04</span>
+        <span class="cat-name">PRODUCT LABELS, STICKERS &amp; DECALS</span>
+        <span class="cat-desc">Vinyl, holographic, weatherproof</span>
+      </div>
+      <div class="mode-cat reveal">
+        <div class="cat-gem">
+          <svg viewBox="0 0 50 58" width="32" height="37">
+            <path d="M25 3 L47 29 L25 55 L3 29 Z" fill="none" stroke="url(#catGem1)" stroke-width="1.5"/>
+            <path d="M25 11 L39 29 L25 47 L11 29 Z" fill="url(#catGem1)" opacity="0.3"/>
+            <circle cx="25" cy="3" r="2" fill="#FF1A2E"/>
+          </svg>
+        </div>
+        <span class="cat-num">05</span>
+        <span class="cat-name">ART PRINTS &amp; COLLECTIBLES</span>
+        <span class="cat-desc">Signed, numbered, limited</span>
+      </div>
+    </div>
+
+    <!-- Drop teaser banner -->
+    <div class="drop-teaser reveal">
+      <div class="drop-gem" aria-hidden="true">
+        <svg viewBox="0 0 50 58" width="28" height="32">
+          <path d="M25 3 L47 29 L25 55 L3 29 Z" fill="none" stroke="#00E5EA" stroke-width="1.5"/>
+          <path d="M25 11 L39 29 L25 47 L11 29 Z" fill="#00E5EA" opacity="0.25"/>
+        </svg>
+      </div>
+      <div class="drop-text">
+        <span class="drop-label">FIRST DROP</span>
+        <span class="drop-status">Coming Soon</span>
+      </div>
+      <div class="drop-action">
+        <a href="/cdn-cgi/l/email-protection#d8b0bdb4b4b798bcbda2a2b1b5b7bcbdf6abacadbcb1b7" class="btn btn-drop">
+          Get Notified <span class="btn-gem-red">◈</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="mode-cta reveal">
+      <div class="cta-row">
+        <a href="/cdn-cgi/l/email-protection#a4ccc1c8c8cbe4c0c1dedecdc9cbc0c18ad7d0d1c0cdcb" class="btn btn-mode">
+          Shop Mode <span class="btn-gem-red">◈</span>
+        </a>
+        <a href="/cdn-cgi/l/email-protection#553d3039393a1531302f2f3c383a31307b262120313c3a" class="btn-email mode-email"><span class="__cf_email__" data-cfemail="cea6aba2a2a18eaaabb4b4a7a3a1aaabe0bdbabbaaa7a1">[email&#160;protected]</span></a>
+      </div>
+      <div class="social-row">
+        <a href="https://instagram.com/dezzi_simply_iconic" target="_blank" rel="noopener" class="social-link mode-social">
+          IG @dezzi_simply_iconic
+        </a>
+        <span class="social-sep mode-sep">◈</span>
+        <a href="https://dezzimode.studio" target="_blank" rel="noopener" class="social-link mode-social">
+          dezzimode.studio
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<!-- ░░ CONTACT / FOOTER ░░ -->
+<!-- ░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░ -->
+<section class="contact-section" id="contact">
+
+  <div class="contact-bg" aria-hidden="true">
+    <svg viewBox="0 0 1400 700" preserveAspectRatio="xMidYMid slice" width="100%" height="100%">
+      <defs>
+        <linearGradient id="contactGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#041518"/>
+          <stop offset="50%" stop-color="#062730"/>
+          <stop offset="100%" stop-color="#020202"/>
+        </linearGradient>
+        <pattern id="contactDiamonds" x="0" y="0" width="70" height="70" patternUnits="userSpaceOnUse">
+          <path d="M35 5 L65 35 L35 65 L5 35 Z" fill="none" stroke="#8ED2CC" stroke-width="0.5" opacity="0.1"/>
+          <circle cx="35" cy="5" r="0.7" fill="#D7F1EE" opacity="0.25"/>
+        </pattern>
+      </defs>
+      <rect width="1400" height="700" fill="url(#contactGrad)"/>
+      <rect width="1400" height="700" fill="url(#contactDiamonds)"/>
+      <!-- Large ghost diamond -->
+      <path d="M700 40 L1340 350 L700 660 L60 350 Z" fill="none" stroke="#8ED2CC" stroke-width="0.5" opacity="0.06"/>
+    </svg>
+  </div>
+
+  <div class="container">
+    <div class="contact-inner reveal">
+
+      <div class="contact-gem-row" aria-hidden="true">
+        <svg viewBox="0 0 80 95" width="56" height="66">
+          <defs>
+            <linearGradient id="ctGem" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#D7F1EE"/>
+              <stop offset="50%" stop-color="#8ED2CC"/>
+              <stop offset="100%" stop-color="#0B4F57"/>
+            </linearGradient>
+            <radialGradient id="ctGlow" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#8ED2CC" stop-opacity="0.4"/>
+              <stop offset="100%" stop-color="#0B4F57" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <ellipse cx="40" cy="47" rx="36" ry="42" fill="url(#ctGlow)"/>
+          <path d="M40 5 L75 47 L40 90 L5 47 Z" fill="none" stroke="url(#ctGem)" stroke-width="1.8"/>
+          <path d="M40 18 L62 47 L40 76 L18 47 Z" fill="url(#ctGem)" opacity="0.2"/>
+          <path d="M40 5 L40 90" stroke="#D7F1EE" stroke-width="0.5" opacity="0.3"/>
+          <path d="M5 47 L75 47" stroke="#D7F1EE" stroke-width="0.5" opacity="0.3"/>
+          <path d="M40 5 L44 0 L48 5 L44 10 Z" fill="#ffffff" opacity="0.9"/>
+          <circle cx="40" cy="5" r="2.5" fill="#ffffff"/>
+        </svg>
+        <svg viewBox="0 0 50 60" width="34" height="41">
+          <defs>
+            <linearGradient id="ctGem2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FF1A2E"/>
+              <stop offset="100%" stop-color="#00C8CC"/>
+            </linearGradient>
+          </defs>
+          <path d="M25 3 L47 30 L25 57 L3 30 Z" fill="none" stroke="url(#ctGem2)" stroke-width="1.6"/>
+          <path d="M25 11 L39 30 L25 49 L11 30 Z" fill="url(#ctGem2)" opacity="0.25"/>
+          <circle cx="25" cy="3" r="2.5" fill="#FF1A2E" opacity="0.9"/>
+        </svg>
+      </div>
+
+      <div class="contact-eyebrow">One Studio. Two Brands. All Dezzi.</div>
+      <h2 class="contact-title">Let's Build<br><em>Something.</em></h2>
+
+      <div class="contact-emails">
+        <a href="/cdn-cgi/l/email-protection#19717c757576597d7c6363706a7d7c6a707e776a376a6d6c7d7076" class="contact-email studio-email-link">
+          <span class="email-label">Studio</span>
+          <span class="email-addr"><span class="__cf_email__" data-cfemail="4f272a2323200f2b2a3535263c2b2a3c2628213c613c3b3a2b2620">[email&#160;protected]</span></span>
+        </a>
+        <div class="email-sep">◆</div>
+        <a href="/cdn-cgi/l/email-protection#90f8f5fcfcffd0f4f5eaeaf9fdfff4f5bee3e4e5f4f9ff" class="contact-email mode-email-link">
+          <span class="email-label mode-el">Mode</span>
+          <span class="email-addr mode-ea"><span class="__cf_email__" data-cfemail="b3dbd6dfdfdcf3d7d6c9c9dadedcd7d69dc0c7c6d7dadc">[email&#160;protected]</span></span>
+        </a>
+      </div>
+
+      <div class="contact-meta">
+        <div class="meta-block">
+          <span class="meta-label">Location</span>
+          <span class="meta-val">Kenai, Alaska</span>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Designs IG</span>
+          <a href="https://instagram.com/dezzi_iconic" target="_blank" rel="noopener" class="meta-link">@dezzi_iconic</a>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Mode IG</span>
+          <a href="https://instagram.com/dezzi_simply_iconic" target="_blank" rel="noopener" class="meta-link">@dezzi_simply_iconic</a>
+        </div>
+        <div class="meta-block">
+          <span class="meta-label">Facebook</span>
+          <a href="https://www.facebook.com/DezzisDesigns" target="_blank" rel="noopener" class="meta-link">Dezzi's Designs</a>
+        </div>
+      </div>
+
+      <div class="contact-domains">
+        <a href="https://dezzisdesigns.studio" target="_blank" rel="noopener" class="domain-link">dezzisdesigns.studio</a>
+        <span class="domain-sep">◆</span>
+        <a href="https://dezzimode.studio" target="_blank" rel="noopener" class="domain-link mode-domain">dezzimode.studio</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-gem" aria-hidden="true">
+        <svg viewBox="0 0 36 42" width="22" height="26">
+          <path d="M18 3 L33 21 L18 39 L3 21 Z" fill="none" stroke="#8ED2CC" stroke-width="1.3"/>
+          <path d="M18 9 L27 21 L18 33 L9 21 Z" fill="#8ED2CC" opacity="0.35"/>
+        </svg>
+      </div>
+      <div class="footer-copy">© 2026 Dezzi's Designs · All Rights Reserved · Kenai, Alaska</div>
+      <div class="footer-tagline">DEZZI: Simply Iconic.</div>
+      <a href="#top" class="footer-back">Back to top ◆</a>
+    </div>
+  </footer>
+</section>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="script.js"></script>
+</body>
+</html>
