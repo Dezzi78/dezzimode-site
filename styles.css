@@ -1,54 +1,165 @@
-/* Simple responsive styles for Dezzimode */
+/* Dezzi Mode: the city after dark. Built from the Dezzi Mode design system. */
 :root{
-  --accent:#0b69ff;
-  --muted:#555;
-  --bg:#fff;
-  --radius:8px;
-  --container-width:1100px;
+  --void:#0d0d0d;
+  --venom:#ff1a1a;
+  --on-venom:var(--void);
+  --electric:#008080;
+  --electric-text:#008c8c;
+  --highlight:#ffffff;
+  --text-muted:#999999;
+  --text-soft:#bbbbbb;
+  --text-faint:#7a7a7a;
+  --void-deep:#050505;
+  --wall:#121212;
+  --poster:#efeae0;
+  --on-poster:var(--void);
+  --space-8:8px;
+  --space-12:12px;
+  --space-16:16px;
+  --space-24:24px;
+  --space-28:28px;
+  --space-40:40px;
+  --space-64:64px;
+  --space-96:96px;
+  --radius-none:0;
+  --radius-pill:999px;
+  --tube:3px;
+  --stroke-tag:3px;
+  --glow-red:0 0 4px rgba(255,26,26,0.9), 0 0 16px rgba(255,26,26,0.55), 0 0 40px rgba(255,26,26,0.3);
+  --glow-teal:0 0 4px rgba(0,140,140,0.9), 0 0 16px rgba(0,140,140,0.55), 0 0 40px rgba(0,140,140,0.3);
+  --shadow-paste:6px 10px 0 rgba(0,0,0,0.55);
+  --container-width:1200px;
+  --breakpoint-md:768px;
+  --font-street:Anton, "Archivo Black", sans-serif;
+  --font-tag:"Sedgwick Ave Display", "Permanent Marker", cursive;
+  --font-body:Archivo, system-ui, sans-serif;
+  --font-mono:"Courier Prime", monospace;
 }
 *{box-sizing:border-box}
 body{
   margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-  color:#111;
-  background:var(--bg);
-  line-height:1.5;
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:26px;
+  color:var(--highlight);
+  background-color:var(--void);
+  /* light spill from signs just out of frame: red high left, teal low right */
+  background-image:
+    radial-gradient(60% 50% at 8% 0%, rgba(255,26,26,.16), transparent 70%),
+    radial-gradient(55% 45% at 100% 100%, rgba(0,140,140,.16), transparent 70%);
+  background-attachment:fixed;
 }
-.container{
-  max-width:var(--container-width);
-  margin:0 auto;
-  padding:1rem;
-}
-.site-header{
-  background:var(--accent);
-  color:#fff;
-}
-.site-header .container{
-  display:flex;
-  align-items:center;
-  gap:1rem;
-  justify-content:space-between;
-}
-.logo{font-weight:700;color:#fff;text-decoration:none}
-.nav{display:flex;gap:1rem}
-.nav a{color:#fff;text-decoration:none;padding:.5rem}
-.menu-toggle{display:none;background:transparent;border:none;color:#fff;font-size:1.2rem}
-.hero{padding:3rem 1rem;text-align:center;background:linear-gradient(180deg,#eef4ff,#fff);border-bottom:1px solid #eee;border-radius:0 0 var(--radius) var(--radius)}
-.section{padding:2rem 1rem}
-.services{display:grid;grid-template-columns:1fr;gap:1rem;list-style:none;padding:0;margin:0}
-.services li{padding:1rem;border:1px solid #eee;border-radius:8px}
-.btn{display:inline-block;background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none;border:none;cursor:pointer}
-.site-footer{border-top:1px solid #eee;padding:1rem 0;text-align:center;color:var(--muted)}
-.form-status{margin-top:.5rem;color:var(--muted)}
+h1,h2,h3{margin:0;color:var(--highlight);font-family:var(--font-street);font-weight:400;text-transform:uppercase;letter-spacing:.01em}
+h1{font-size:72px;line-height:.92}
+h2{font-size:48px;line-height:.95}
+h3{font-size:32px;line-height:1}
+p{margin:0;color:var(--text-soft)}
+a{color:var(--highlight);text-decoration-color:var(--venom);text-underline-offset:4px;text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--highlight);outline-offset:3px}
+.container{max-width:var(--container-width);margin:0 auto;padding:var(--space-16)}
+.eyebrow{display:block;font:700 12px/16px var(--font-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--electric-text);margin-bottom:var(--space-8)}
+.sub{margin-top:var(--space-12);color:var(--text-muted);max-width:34em}
 
-/* Responsive */
+/* the graffiti tag: red spray with a white outline and a red neon glow */
+.tag-spray{display:inline-block;font-family:var(--font-tag);font-weight:400;color:var(--venom);-webkit-text-stroke:var(--stroke-tag) var(--highlight);paint-order:stroke fill;text-shadow:var(--glow-red);transform:rotate(-4deg);line-height:1;text-transform:none;letter-spacing:0}
+.tag-spray.teal{color:var(--electric);text-shadow:var(--glow-teal)}
+
+/* header: a neon tube along the bottom */
+.site-header{position:relative;background:rgba(13,13,13,.85);border-bottom:var(--tube) solid var(--electric);box-shadow:var(--glow-teal)}
+.site-header .container{display:flex;align-items:center;gap:var(--space-24);justify-content:space-between;padding-top:var(--space-12);padding-bottom:var(--space-12)}
+.logo{font-family:var(--font-tag);font-size:36px;line-height:1.2;color:var(--venom);-webkit-text-stroke:2px var(--highlight);paint-order:stroke fill;text-shadow:var(--glow-red);text-decoration:none;display:inline-block;transform:rotate(-3deg);animation:flicker 6s infinite}
+.nav{display:flex;gap:var(--space-24)}
+.nav a{font:700 12px/16px var(--font-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--highlight);text-decoration:none;padding:var(--space-8) 0}
+.nav a:hover,.nav a[aria-current="page"]{color:var(--electric-text);text-shadow:var(--glow-teal)}
+.menu-toggle{display:none;background:transparent;border:2px solid var(--electric);border-radius:0;color:var(--highlight);font:700 12px/16px var(--font-mono);letter-spacing:.18em;padding:var(--space-8) var(--space-12);cursor:pointer;box-shadow:var(--glow-teal)}
+
+/* hero: a wall at night */
+.hero{position:relative;overflow:hidden;padding:var(--space-64) var(--space-16);background:
+    radial-gradient(40% 60% at 85% 20%, rgba(255,26,26,.22), transparent 70%),
+    radial-gradient(35% 55% at 10% 90%, rgba(0,140,140,.22), transparent 70%),
+    var(--void-deep)}
+.hero h1{font-size:72px;line-height:.9;max-width:9em}
+.hero .tag-spray{font-size:56px;margin:0 0 var(--space-8) -4px}
+.hero p{font-size:20px;line-height:30px;margin-top:var(--space-24);max-width:34em}
+.hero .actions{display:flex;flex-wrap:wrap;gap:var(--space-16);margin-top:var(--space-40)}
+.hero .sticker{position:absolute;right:6%;top:18%}
+
+/* posters: wheatpasted service cards */
+.section{padding:var(--space-64) var(--space-16)}
+.services{display:grid;grid-template-columns:1fr;gap:var(--space-40);list-style:none;padding:0;margin:var(--space-40) 0 0}
+.services li{position:relative;background:var(--poster);color:var(--on-poster);padding:var(--space-40) var(--space-24) var(--space-40);transform:rotate(-1.2deg);box-shadow:var(--shadow-paste);clip-path:polygon(0 0,100% 0,100% 92%,96% 100%,88% 95%,78% 100%,66% 94%,54% 100%,42% 95%,30% 100%,18% 94%,8% 100%,0 95%);transition:transform .15s}
+.services li:nth-child(even){transform:rotate(1deg);background:var(--venom)}
+.services li::before{content:"";position:absolute;top:-6px;left:50%;width:84px;height:22px;margin-left:-42px;background:rgba(255,255,255,.45);transform:rotate(-3deg)}
+.services li:hover{transform:rotate(0) scale(1.02)}
+.services li h3{color:var(--on-poster);font-size:40px;line-height:.95}
+.services li p{color:var(--on-poster);margin-top:var(--space-12);font-weight:500}
+
+/* buttons: a lit sign and a teal tube */
+.btn{display:inline-block;background:var(--venom);color:var(--on-venom);font:700 13px/16px var(--font-mono);letter-spacing:.18em;text-transform:uppercase;padding:var(--space-16) var(--space-28);border:0;border-radius:0;text-decoration:none;cursor:pointer;transition:box-shadow .15s,transform .15s}
+.btn:hover{box-shadow:var(--glow-red);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--highlight);box-shadow:inset 0 0 0 var(--tube) var(--electric)}
+.btn-ghost:hover{box-shadow:inset 0 0 0 var(--tube) var(--electric),var(--glow-teal)}
+
+/* stickers: slapped labels */
+.sticker{display:inline-block;font:700 12px/16px var(--font-mono);letter-spacing:.18em;text-transform:uppercase;padding:var(--space-8) var(--space-12);background:var(--poster);color:var(--on-poster);transform:rotate(-6deg);box-shadow:var(--shadow-paste)}
+.sticker.red{background:var(--venom);color:var(--on-venom);transform:rotate(4deg)}
+.sticker.round{border-radius:var(--radius-pill);padding:var(--space-12) var(--space-16)}
+.sticker.outline{background:var(--void);color:var(--electric-text);box-shadow:inset 0 0 0 2px var(--electric),var(--glow-teal);transform:rotate(-2deg)}
+
+/* form: fields on the wall, teal tubes on focus */
+.section.wall{background:var(--wall)}
+form{max-width:560px;margin-top:var(--space-40)}
+form label{display:block;font:700 12px/16px var(--font-mono);letter-spacing:.18em;text-transform:uppercase;color:var(--electric-text);margin-bottom:var(--space-24)}
+form input,form textarea{display:block;width:100%;margin-top:var(--space-8);font:400 16px/24px var(--font-body);letter-spacing:0;text-transform:none;color:var(--highlight);background:var(--void);border:2px solid var(--electric);border-radius:0;padding:var(--space-12)}
+form input:focus-visible,form textarea:focus-visible{outline:none;border-color:var(--electric);box-shadow:var(--glow-teal)}
+.form-status{margin-top:var(--space-12);font-size:14px;color:var(--text-muted)}
+
+/* footer: last neon tube, a tag and the small print */
+.site-footer{border-top:var(--tube) solid var(--venom);box-shadow:var(--glow-red);padding:var(--space-40) var(--space-16) var(--space-64);text-align:center}
+.site-footer .tag-spray{display:block;width:max-content;margin:0 auto var(--space-24);font-size:44px}
+.site-footer p{font:700 12px/16px var(--font-mono);letter-spacing:.08em;text-transform:uppercase;color:var(--text-faint)}
+
+/* the one animation: a sign that catches now and then */
+@keyframes flicker{0%,93%,100%{opacity:1}94%{opacity:.55}95%{opacity:1}96.5%{opacity:.7}97%{opacity:1}}
+@media(prefers-reduced-motion:reduce){.logo{animation:none}.btn,.services li{transition:none}}
+
 @media(min-width:768px){
-  .menu-toggle{display:none}
-  .nav{display:flex}
+  .container{padding:var(--space-16) var(--space-24)}
+  .hero{padding:var(--space-96) var(--space-24)}
+  .hero h1{font-size:120px}
+  .hero .tag-spray{font-size:72px}
+  h2{font-size:64px}
+  .section{padding:var(--space-64) var(--space-24)}
   .services{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:767px){
-  .nav{display:none;flex-direction:column;background:var(--accent)}
+  .site-header .container{flex-wrap:wrap}
+  .nav{display:none;flex-direction:column;width:100%;gap:0}
   .menu-toggle{display:block}
-  .site-header .container{align-items:center}
+  .hero .sticker{position:static;margin-top:var(--space-24)}
+}
+
+/* ---- site layout ---- */
+html{scroll-behavior:smooth}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+section[id]{scroll-margin-top:80px}
+.site-header{position:sticky;top:0;z-index:10;backdrop-filter:blur(6px)}
+.skip-link{position:absolute;left:-9999px;top:0;background:var(--venom);color:var(--on-venom);padding:var(--space-8) var(--space-12);font:700 12px/16px var(--font-mono);letter-spacing:.18em;text-transform:uppercase;z-index:20}
+.skip-link:focus{left:var(--space-16);top:var(--space-8)}
+
+/* about: a statement on the wall */
+.about{display:grid;gap:var(--space-40);align-items:center}
+.about p{font-size:20px;line-height:30px;max-width:34em;margin-top:var(--space-24)}
+.about .tag-spray{font-size:48px}
+.about-note{display:flex;flex-wrap:wrap;gap:var(--space-24);margin-top:var(--space-40)}
+
+/* blog: a board of flyers, coming soon */
+.board{position:relative;margin-top:var(--space-40);padding:var(--space-64) var(--space-24);border:2px dashed var(--electric);text-align:center}
+.board p{max-width:30em;margin:var(--space-12) auto 0}
+.board .sticker{position:absolute;top:-14px;right:var(--space-24)}
+.board h3{font-size:40px}
+
+@media(min-width:768px){
+  .about{grid-template-columns:3fr 2fr}
+  .about p{font-size:22px;line-height:34px}
 }

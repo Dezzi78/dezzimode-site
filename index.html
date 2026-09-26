@@ -3,16 +3,23 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dezzimode — Home</title>
+  <title>Dezzi Mode — Made for the streets</title>
+  <meta name="description" content="Dezzi Mode: design-forward products and services for your creative life. Logos, style guides, watermarks and custom merch." />
+  <meta name="theme-color" content="#0d0d0d" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Sedgwick+Ave+Display&family=Archivo:wght@400;500;700&family=Courier+Prime:wght@700&family=Permanent+Marker&family=Archivo+Black&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <header class="site-header">
     <div class="container">
-      <a class="logo" href="#">Dezzimode</a>
-      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <a class="logo" href="#home">Dezzi Mode</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">Menu</button>
       <nav class="nav" id="nav">
-        <a href="#home">Home</a>
+        <a href="#home" aria-current="page">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#blog">Blog</a>
@@ -21,65 +28,93 @@
     </div>
   </header>
 
-  <main>
-    <section id="home" class="hero container">
-      <h1>Welcome to Dezzimode</h1>
-      <p>Design-forward products and services for your creative life.</p>
-      <a class="btn" href="#contact">Get in touch</a>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container">
+        <span class="eyebrow">Brand studio — logos, merch, the works</span>
+        <span class="tag-spray">Dezzi Mode</span>
+        <h1>Made for the streets. Built to be seen.</h1>
+        <p>Design-forward products and services for your creative life.</p>
+        <div class="actions">
+          <a class="btn" href="#contact">Get in touch</a>
+          <a class="btn btn-ghost" href="#services">See the work</a>
+        </div>
+      </div>
+      <span class="sticker round red">Open late</span>
     </section>
 
     <section id="about" class="container section">
-      <h2>About</h2>
-      <p>Dezzimode is a small business focused on original designs and custom work. Write a short paragraph here about your story, mission, or what makes you different.</p>
+      <div class="about">
+        <div>
+          <span class="eyebrow">About</span>
+          <h2>Original work. No copies.</h2>
+          <!-- Replace with your story: who you are, why you started, what makes Dezzi Mode different. -->
+          <p>Dezzi Mode is a small studio focused on original designs and custom work, with brands and merch built to stand out on any street.</p>
+        </div>
+        <div>
+          <span class="tag-spray teal">made by hand</span>
+          <div class="about-note">
+            <span class="sticker">Original designs</span>
+            <span class="sticker outline">Custom work</span>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="services" class="container section">
-      <h2>Services</h2>
+      <span class="eyebrow">What we do</span>
+      <h2>Posted up all over town</h2>
       <ul class="services">
         <li>
-          <h3>Service One</h3>
-          <p>Short description of this service.</p>
+          <h3>Logo design</h3>
+          <p>A mark that holds up from a phone screen to a billboard.</p>
         </li>
         <li>
-          <h3>Service Two</h3>
-          <p>Short description of this service.</p>
+          <h3>Brand style guides</h3>
+          <p>Your colours, type and rules, all in one place.</p>
+        </li>
+        <li>
+          <h3>Watermarks</h3>
+          <p>Clean, transparent marks for photos and proofs.</p>
+        </li>
+        <li>
+          <h3>Custom merch</h3>
+          <p>Tees, hoodies and more, printed on demand.</p>
         </li>
       </ul>
     </section>
 
     <section id="blog" class="container section">
-      <h2>Blog</h2>
-      <p>Coming soon — posts and updates about Dezzimode.</p>
+      <span class="eyebrow">Blog</span>
+      <h2>Word on the street</h2>
+      <div class="board">
+        <span class="sticker red">Coming soon</span>
+        <h3>Nothing posted yet</h3>
+        <p>Posts and updates about Dezzi Mode are on the way.</p>
+      </div>
     </section>
 
-    <section id="contact" class="container section">
-      <h2>Contact</h2>
-      <p>Fill out the form below and we will get back to you — or email us at <a href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>.</p>
+    <section id="contact" class="section wall">
+      <div class="container">
+        <span class="eyebrow">Say something</span>
+        <h2>Contact</h2>
+        <p class="sub">Fill out the form below and we will get back to you — or email us at <a href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>.</p>
 
-      <!-- To use a working form, sign up at Formspree.io (or similar) and replace the action URL -->
-      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <label>
-          Your name
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button type="submit" class="btn">Send</button>
-        <p id="form-status" class="form-status" aria-live="polite"></p>
-      </form>
+        <!-- To use a working form, sign up at Formspree.io (or similar) and replace the action URL -->
+        <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label>Your name<input type="text" name="name" autocomplete="name" required /></label>
+          <label>Email<input type="email" name="email" autocomplete="email" required /></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button type="submit" class="btn">Send</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Dezzimode — All rights reserved.</p>
-    </div>
+    <span class="tag-spray teal">see you out there</span>
+    <p>© <span id="year"></span> Dezzi Mode — All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
