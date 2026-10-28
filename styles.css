@@ -90,8 +90,14 @@ h3{font-family:var(--font-display);font-style:italic;font-weight:900;font-size:1
 /* Drops */
 .drop-grid{display:grid;grid-template-columns:1fr;gap:20px;list-style:none;padding:0;margin:2rem 0 0}
 .drop{display:flex;flex-direction:column;gap:.35rem}
-.drop-art{background:var(--surface);aspect-ratio:1;display:flex;align-items:center;justify-content:center;padding:24px;margin-bottom:.75rem}
-.drop-art svg{width:100%;max-width:300px;height:auto;max-height:100%}
+.drop-art{--pad:24px;position:relative;background:var(--surface);aspect-ratio:1;margin-bottom:.75rem}
+.drop-art svg{position:absolute;inset:var(--pad);width:calc(100% - 2 * var(--pad));height:calc(100% - 2 * var(--pad))}
+.drop-art .mock{filter:drop-shadow(0 10px 18px rgba(0,0,0,0.55))}
+[data-garment="tee"] .mock-hoodie,[data-garment="hoodie"] .mock-tee{display:none}
+.garment-switch{display:inline-flex;margin-top:1.5rem;border:2px solid var(--teal);box-shadow:0 0 14px rgba(31,224,208,0.3)}
+.garment-switch button{min-width:96px;min-height:44px;padding:0 1.25rem;background:transparent;color:var(--text);border:none;cursor:pointer;font:500 13px/16px var(--font-mono);letter-spacing:0.16em;text-transform:uppercase}
+.garment-switch button[aria-pressed="true"]{background:var(--teal);color:var(--bg)}
+.garment-switch button:focus-visible{outline:2px solid var(--text);outline-offset:-4px}
 .drop h3{font-size:1.5rem}
 .drop p{margin:0;font-size:14px;color:var(--muted)}
 .drop .price{font:500 13px/16px var(--font-mono);letter-spacing:0.16em;color:var(--teal);margin-top:.35rem}
@@ -129,7 +135,7 @@ form .btn{align-self:flex-start}
   .nav{display:none;flex-direction:column;gap:0;width:100%;padding-bottom:.5rem}
   .menu-toggle{display:flex}
   .drop-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-  .drop-art{padding:12px}
+  .drop-art{--pad:10px}
   .drop h3{font-size:1.25rem}
   .marker{font-size:24px}
   .lede{font-size:18px;line-height:28px}

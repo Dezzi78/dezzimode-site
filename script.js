@@ -37,3 +37,16 @@ if (form) {
     }
   });
 }
+
+// Drops: show designs on tee or hoodie
+const drops = document.getElementById('drops');
+if (drops) {
+  drops.querySelectorAll('.garment-switch button').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      drops.dataset.garment = btn.dataset.garment;
+      drops.querySelectorAll('.garment-switch button').forEach((b) => {
+        b.setAttribute('aria-pressed', String(b === btn));
+      });
+    });
+  });
+}
