@@ -7,10 +7,12 @@ Files:
 - styles.css
 - script.js
 
-Brand (Direction 01: Neon Crown)
-- Colors: #0B0D12 ink, #22E5D3 neon cyan, #FF2B4A neon red, #F4F6F8 white, #1B1F2A/#12151C surfaces. All defined as CSS variables at the top of styles.css.
-- Type: Anton for headlines and tags, Space Grotesk for everything else (loaded from Google Fonts).
-- Mark: the crowned diamond lives once as an SVG <symbol id="crown-diamond"> in index.html and is reused in the header and hero.
+Brand (C1 Crown Jewel + logo rounds 3–5)
+- Colors: Ink #0D1117, Surface #161B22, Neon Teal #1FE0D0, Crimson #E8174F, White. All defined as CSS variables at the top of styles.css.
+- Type: Playfair Display Black Italic (headlines), Permanent Marker (marker lines, diamond tags), DM Mono (nav, labels, buttons), DM Sans (body), Caveat Brush (logo tag).
+- Logo: the Round 5 lockups (tag across the crowned diamond + "Make Them Look.") live once as SVG <symbol>s in index.html — #lockup-horizontal in the header/footer, #lockup-stacked on the hero tee.
+- Drops: Round 4 tag diamonds and Round 3 dressed-up skulls. Replace [PRICE] placeholders before launch.
+- favicon.svg is the Round 3 solid diamond with jeweled crown.
 
 Run locally
 1. Save these files in a folder (already in this repo).
