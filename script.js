@@ -7,6 +7,7 @@ if (menuToggle && nav) {
   menuToggle.addEventListener('click', () => {
     const visible = nav.style.display === 'flex';
     nav.style.display = visible ? 'none' : 'flex';
+    menuToggle.setAttribute('aria-expanded', String(!visible));
   });
 }
 

@@ -7,6 +7,11 @@ Files:
 - styles.css
 - script.js
 
+Brand (Direction 01: Neon Crown)
+- Colors: #0B0D12 ink, #22E5D3 neon cyan, #FF2B4A neon red, #F4F6F8 white, #1B1F2A/#12151C surfaces. All defined as CSS variables at the top of styles.css.
+- Type: Anton for headlines and tags, Space Grotesk for everything else (loaded from Google Fonts).
+- Mark: the crowned diamond lives once as an SVG <symbol id="crown-diamond"> in index.html and is reused in the header and hero.
+
 Run locally
 1. Save these files in a folder (already in this repo).
 2. In the folder, run a simple server:

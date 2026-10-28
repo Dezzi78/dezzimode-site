@@ -1,54 +1,124 @@
-/* Simple responsive styles for Dezzimode */
+/* Dezzi Mode — Direction 01: Neon Crown */
 :root{
-  --accent:#0b69ff;
-  --muted:#555;
-  --bg:#fff;
-  --radius:8px;
+  --bg:#0B0D12;
+  --surface:#12151C;
+  --surface-2:#1B1F2A;
+  --line:#232938;
+  --line-strong:#3A4256;
+  --text:#F4F6F8;
+  --muted:#9AA3B2;
+  --cyan:#22E5D3;
+  --red:#FF2B4A;
+  --glow-cyan:rgba(34,229,211,0.7);
+  --glow-red:rgba(255,43,74,0.6);
+  --font-display:'Anton',Impact,sans-serif;
+  --font-body:'Space Grotesk',system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --radius:4px;
   --container-width:1100px;
 }
 *{box-sizing:border-box}
 body{
   margin:0;
-  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
-  color:#111;
+  font-family:var(--font-body);
+  color:var(--text);
   background:var(--bg);
   line-height:1.5;
 }
+a{color:var(--cyan)}
+a:hover{color:var(--text)}
+h1,h2,h3{font-family:var(--font-display);font-weight:400;letter-spacing:0.02em;line-height:1.05;margin:0 0 .75rem}
+h2{font-size:clamp(2.5rem,6vw,4rem)}
+h3{font-size:1.6rem}
 .container{
   max-width:var(--container-width);
   margin:0 auto;
   padding:1rem;
 }
+.eyebrow{margin:0 0 .4rem;font-size:12px;font-weight:700;letter-spacing:0.22em;color:var(--cyan)}
+
+/* Header */
 .site-header{
-  background:var(--accent);
-  color:#fff;
+  background:var(--bg);
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  z-index:10;
 }
 .site-header .container{
   display:flex;
+  flex-wrap:wrap;
   align-items:center;
   gap:1rem;
   justify-content:space-between;
 }
-.logo{font-weight:700;color:#fff;text-decoration:none}
-.nav{display:flex;gap:1rem}
-.nav a{color:#fff;text-decoration:none;padding:.5rem}
-.menu-toggle{display:none;background:transparent;border:none;color:#fff;font-size:1.2rem}
-.hero{padding:3rem 1rem;text-align:center;background:linear-gradient(180deg,#eef4ff,#fff);border-bottom:1px solid #eee;border-radius:0 0 var(--radius) var(--radius)}
-.section{padding:2rem 1rem}
-.services{display:grid;grid-template-columns:1fr;gap:1rem;list-style:none;padding:0;margin:0}
-.services li{padding:1rem;border:1px solid #eee;border-radius:8px}
-.btn{display:inline-block;background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:6px;text-decoration:none;border:none;cursor:pointer}
-.site-footer{border-top:1px solid #eee;padding:1rem 0;text-align:center;color:var(--muted)}
+.logo{display:flex;align-items:center;gap:.6rem;font-family:var(--font-display);font-size:1.5rem;letter-spacing:0.1em;color:var(--text);text-decoration:none}
+.logo-mark{filter:drop-shadow(0 0 4px var(--cyan))}
+.nav{display:flex;gap:.5rem}
+.nav a{color:var(--muted);text-decoration:none;padding:.75rem .5rem;font-size:13px;font-weight:700;letter-spacing:0.18em;text-transform:uppercase}
+.nav a:hover{color:var(--cyan)}
+.menu-toggle{display:none;background:transparent;border:1px solid var(--line);border-radius:var(--radius);color:var(--text);width:44px;height:44px;padding:0;cursor:pointer;align-items:center;justify-content:center}
+
+/* Hero */
+.hero{border-bottom:1px solid var(--line);background:var(--surface)}
+.hero-inner{padding:5rem 1rem;display:flex;flex-direction:column;align-items:center;text-align:center;gap:.75rem}
+.hero-mark{filter:drop-shadow(0 0 7px var(--cyan))}
+.wordmark{margin:0;font-size:clamp(3.5rem,12vw,8rem);line-height:1;letter-spacing:0.1em;text-shadow:0 0 14px var(--glow-cyan)}
+.slogan{margin:0;font-size:clamp(14px,2.2vw,20px);font-weight:700;letter-spacing:0.32em;color:var(--red);text-shadow:0 0 10px var(--glow-red)}
+.hero-copy{margin:.75rem 0 1rem;color:var(--muted);max-width:36rem}
+
+.section{padding:4rem 1rem;border-bottom:1px solid var(--line)}
+.section p{max-width:44rem}
+
+/* Merch */
+.tees{display:grid;grid-template-columns:1fr;gap:2rem;margin:2rem 0}
+.tee{margin:0;display:flex;flex-direction:column;align-items:center;gap:.5rem}
+.tee svg{width:100%;max-width:360px;height:auto}
+.tee figcaption{font-size:12px;font-weight:700;letter-spacing:0.24em;color:var(--muted)}
+.glow-cyan{filter:drop-shadow(0 0 5px var(--cyan))}
+.glow-red{filter:drop-shadow(0 0 7px var(--red))}
+
+.feature-row{display:grid;grid-template-columns:1fr;gap:2rem}
+.wig-card{aspect-ratio:1;max-width:300px;width:100%;padding:24px;background:var(--surface);border:2px solid var(--cyan);box-shadow:0 0 18px rgba(34,229,211,0.45);display:flex;flex-direction:column;justify-content:space-between}
+.wig-card p{margin:0}
+.wig-label{font-size:14px;font-weight:700;letter-spacing:0.22em;color:var(--cyan)}
+.wig-number{font-family:var(--font-display);font-size:96px;line-height:1;color:var(--red);text-shadow:0 0 14px var(--glow-red)}
+.wig-meta{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem}
+.wig-name{font-size:18px;font-weight:600}
+.wig-brand{font-size:11px;font-weight:700;letter-spacing:0.2em;color:var(--muted)}
+.voice{padding:28px;border:1px solid var(--line);display:flex;flex-direction:column;justify-content:space-between;gap:1rem}
+.voice .eyebrow{color:var(--muted)}
+.voice-line{margin:0;font-family:var(--font-display);font-size:34px;line-height:1.1;letter-spacing:0.02em}
+.voice-cyan{color:var(--cyan)}
+.voice-red{color:var(--red)}
+
+/* Services */
+.services{display:grid;grid-template-columns:1fr;gap:1rem;list-style:none;padding:0;margin:1.5rem 0 0}
+.services li{padding:1.5rem;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius)}
+.services li p{margin:0;color:var(--muted)}
+
+/* Buttons & forms */
+.btn{display:inline-block;background:var(--cyan);color:var(--bg);padding:.85rem 1.5rem;border-radius:var(--radius);text-decoration:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:13px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;box-shadow:0 0 18px rgba(34,229,211,0.45)}
+.btn:hover{background:var(--text);color:var(--bg)}
+form{display:flex;flex-direction:column;gap:1rem;max-width:36rem;margin-top:1.5rem}
+label{display:flex;flex-direction:column;gap:.4rem;font-size:12px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--muted)}
+input,textarea{font:inherit;font-size:16px;letter-spacing:normal;text-transform:none;color:var(--text);background:var(--surface);border:1px solid var(--line-strong);border-radius:var(--radius);padding:.75rem}
+input:focus,textarea:focus{outline:2px solid var(--cyan);outline-offset:1px;border-color:var(--cyan)}
+form .btn{align-self:flex-start}
 .form-status{margin-top:.5rem;color:var(--muted)}
+
+.site-footer{padding:1.5rem 0;text-align:center;color:var(--muted);font-size:14px}
 
 /* Responsive */
 @media(min-width:768px){
   .menu-toggle{display:none}
   .nav{display:flex}
   .services{grid-template-columns:repeat(2,1fr)}
+  .tees{grid-template-columns:repeat(2,1fr)}
+  .feature-row{grid-template-columns:300px 1fr;align-items:stretch}
 }
 @media(max-width:767px){
-  .nav{display:none;flex-direction:column;background:var(--accent)}
-  .menu-toggle{display:block}
-  .site-header .container{align-items:center}
+  .nav{display:none;flex-direction:column;width:100%;padding-bottom:.5rem}
+  .menu-toggle{display:flex}
+  .wig-number{font-size:80px}
+  .voice-line{font-size:28px}
 }
