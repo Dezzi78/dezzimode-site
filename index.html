@@ -54,6 +54,24 @@
       <path d="M50 236 L190 236 L190 250 L50 250 Z" fill="#12161D" stroke="#2C343F" stroke-width="2"/>
       <path d="M2 212 L28 216 L27 232 L1 228 Z M238 212 L212 216 L213 232 L239 228 Z" fill="#12161D" stroke="#2C343F" stroke-width="2" stroke-linejoin="round"/>
     </symbol>
+    <!-- White garments, for artwork made on a light ground -->
+    <symbol id="tee-white" viewBox="0 0 240 260">
+      <path d="M70 10 L100 0 Q120 22 140 0 L170 10 L230 60 L200 100 L180 85 L180 250 L60 250 L60 85 L40 100 L10 60 Z" fill="#F2F2EF" stroke="#B4B8BF" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M100 0 Q120 22 140 0" fill="none" stroke="#B4B8BF" stroke-width="5" stroke-linecap="round"/>
+      <path d="M44 96 L36 80 M196 96 L204 80" stroke="#B4B8BF" stroke-width="2" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="hoodie-white" viewBox="0 -8 240 262">
+      <path d="M78 34 C72 2 98 -6 120 -6 C142 -6 168 2 162 34 Z" fill="#E2E2DE" stroke="#B4B8BF" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M84 26 L156 26 L204 46 Q222 54 226 76 L238 212 L212 216 L198 100 L190 106 L190 236 L50 236 L50 106 L42 100 L28 216 L2 212 L14 76 Q18 54 36 46 Z" fill="#F2F2EF" stroke="#B4B8BF" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M84 26 C90 52 106 62 120 62 C134 62 150 52 156 26 C148 12 134 6 120 6 C106 6 92 12 84 26 Z" fill="#D6D6D1" stroke="#B4B8BF" stroke-width="2"/>
+      <path d="M84 26 C90 52 106 62 120 62 C134 62 150 52 156 26" fill="none" stroke="#B4B8BF" stroke-width="5" stroke-linecap="round"/>
+      <path d="M110 60 L109 70 M130 60 L131 70" stroke="#A7B0BA" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M109 70 L108.5 74 M131 70 L131.5 74" stroke="#1FE0D0" stroke-width="3.5" stroke-linecap="round"/>
+      <path d="M80 182 L160 182 L172 232 L68 232 Z" fill="none" stroke="#B4B8BF" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M80 182 L73 212 M160 182 L167 212" stroke="#B4B8BF" stroke-width="2" stroke-linecap="round"/>
+      <path d="M50 236 L190 236 L190 250 L50 250 Z" fill="#E6E6E2" stroke="#B4B8BF" stroke-width="2"/>
+      <path d="M2 212 L28 216 L27 232 L1 228 Z M238 212 L212 216 L213 232 L239 228 Z" fill="#E6E6E2" stroke="#B4B8BF" stroke-width="2" stroke-linejoin="round"/>
+    </symbol>
     <symbol id="art-crown-jewel" viewBox="-45 -70 290 250">
               <path d="M56 -8 L56 -40 L78 -24 L100 -58 L122 -24 L144 -40 L144 -8 Z" fill="#1FE0D0"/>
               <g fill="#FFFFFF"><circle cx="62" cy="-16" r="3"/><circle cx="71.5" cy="-16" r="3"/><circle cx="81" cy="-16" r="3"/><circle cx="90.5" cy="-16" r="3"/><circle cx="100" cy="-16" r="3"/><circle cx="109.5" cy="-16" r="3"/><circle cx="119" cy="-16" r="3"/><circle cx="128.5" cy="-16" r="3"/><circle cx="138" cy="-16" r="3"/></g>
@@ -183,11 +201,34 @@
     <section id="drops" class="container section" data-garment="tee">
       <p class="eyebrow">Drop 01</p>
       <h2>Drops</h2>
-      <p class="muted">Your tag across your diamond.</p>
+      <p class="muted">Every design on a tee or a hoodie.</p>
       <div class="garment-switch" role="group" aria-label="Show designs on">
         <button type="button" data-garment="tee" aria-pressed="true">Tee</button>
         <button type="button" data-garment="hoodie" aria-pressed="false">Hoodie</button>
       </div>
+      <h3 class="subhead subhead-first">The originals</h3>
+      <ul class="drop-grid">
+        <li class="drop">
+          <div class="drop-art">
+            <svg class="mock mock-tee" viewBox="0 0 240 260" role="img" aria-label="Black tee printed with the original teal DEZZI MODE tag over a navy diamond"><use href="#tee"/><image href="assets/logo-original-tag.png" x="66" y="60" width="108" height="63"/></svg>
+            <svg class="mock mock-hoodie" viewBox="0 -8 240 262" role="img" aria-label="Black hoodie printed with the original teal DEZZI MODE tag over a navy diamond"><use href="#hoodie" y="-8" width="240" height="262"/><image href="assets/logo-original-tag.png" x="70" y="84" width="100" height="58"/></svg>
+          </div>
+          <h3>Original Tag</h3>
+          <p>Teal tag over the navy diamond, on black</p>
+          <p class="price">[PRICE]</p>
+        </li>
+        <li class="drop">
+          <div class="drop-art">
+            <svg class="mock mock-tee" viewBox="0 0 240 260" role="img" aria-label="White tee printed with the original splatter logo: teal DEZZI MODE tag over a charcoal diamond with pink paint splatter"><use href="#tee-white"/><image href="assets/logo-original-splatter.png" x="62" y="40" width="116" height="116"/></svg>
+            <svg class="mock mock-hoodie" viewBox="0 -8 240 262" role="img" aria-label="White hoodie printed with the original splatter logo: teal DEZZI MODE tag over a charcoal diamond with pink paint splatter"><use href="#hoodie-white" y="-8" width="240" height="262"/><image href="assets/logo-original-splatter.png" x="68" y="72" width="104" height="104"/></svg>
+          </div>
+          <h3>Original Splatter</h3>
+          <p>Tag, charcoal diamond and pink splatter, on white</p>
+          <p class="price">[PRICE]</p>
+        </li>
+      </ul>
+
+      <h3 class="subhead">Your tag across your diamond</h3>
       <ul class="drop-grid">
         <li class="drop">
           <div class="drop-art">

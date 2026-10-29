@@ -11,6 +11,7 @@ Brand (C1 Crown Jewel + logo rounds 3–5)
 - Colors: Ink #0D1117, Surface #161B22, Neon Teal #1FE0D0, Crimson #E8174F, White. All defined as CSS variables at the top of styles.css.
 - Type: Playfair Display Black Italic (headlines), Permanent Marker (marker lines, diamond tags), DM Mono (nav, labels, buttons), DM Sans (body), Caveat Brush (logo tag).
 - Logo: the Round 5 lockups (tag across the crowned diamond + "Make Them Look.") live once as SVG <symbol>s in index.html — #lockup-horizontal in the header/footer, #lockup-stacked on the hero tee.
+- The originals: your own Logo Lab artwork (teal tag + navy diamond on black garments; splatter version on white garments). Background-free cut-outs live in assets/ (logo-original-tag.png, logo-original-splatter.png); they come from 800px source files, so they work for mockups but need full-size or vector art before printing.
 - Drops: Round 4 tag diamonds (Crown Jewel, Neon Outline, Drip) and traditional skulls with cut-diamond eyes (Diamond Eyes, Crowned, Diamond Tears). Replace [PRICE] placeholders before launch.
 - Mockups: every design is shown on a black tee and a black hoodie (Tee / Hoodie switch in the Drops section). The garment shapes are the #tee and #hoodie SVG symbols; each design is an #art-* symbol.
 - mockups/: 1800x1800 PNG mockups (tee-*.png, hoodie-*.png) for shop listings and social posts. These are flat illustrated mockups; for photo mockups, upload print files to Printful/Printify and use their mockup generator.
