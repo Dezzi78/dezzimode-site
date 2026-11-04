@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dezzi Mode — Make Them Look.</title>
-  <meta name="description" content="Dezzi Mode: crowned daily. Original designs, custom work and merch." />
+  <title>Dezzi Mode — Simply Iconic</title>
+  <meta name="description" content="Dezzi Mode: custom merchandise, brand identity, logos, watermarks, and professional graphic design. Your brand, done right." />
   <meta name="theme-color" content="#0D1117" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Playfair+Display:ital,wght@1,900&family=DM+Mono:wght@500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -40,7 +40,7 @@
   </svg>
 
   <header class="site-header">
-    <div class="container">
+    <div class="container header-inner">
       <a class="logo" href="#home" aria-label="Dezzi Mode home">
         <svg class="logo-mark" aria-hidden="true"><use href="#logo-d2"/></svg>
         <span class="logo-word">DEZZI MODE</span>
@@ -54,8 +54,7 @@
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
-        <a href="#merch">Merch</a>
-        <a href="#blog">Blog</a>
+        <a href="#pricing">Pricing</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
@@ -63,125 +62,86 @@
 
   <main>
     <section id="home" class="hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
-          <p class="eyebrow">Dezzi Mode</p>
-          <h1 class="hero-title">Make them <span class="glow-red">look.</span></h1>
-          <p class="hero-lede">Design-forward products and services for your creative life. Crowned daily.</p>
-          <div class="hero-actions">
-            <a class="btn" href="#contact">Get in touch</a>
-            <a class="btn btn-ghost" href="#merch">See the merch</a>
-          </div>
-        </div>
-
-        <div class="lockup" aria-label="Dezzi Mode logo lockup">
-          <svg class="lockup-mark" role="img" aria-label="Dezzi Mode logo: neon outline diamond with crown"><use href="#logo-d2"/></svg>
-          <p class="lockup-word">DEZZI MODE</p>
-          <p class="lockup-tag">MAKE THEM LOOK.</p>
-        </div>
+      <div class="container">
+        <svg class="hero-mark" role="img" aria-label="Dezzi Mode logo: neon outline diamond with crown"><use href="#logo-d2"/></svg>
+        <p class="brand-word">DEZZI MODE</p>
+        <p class="brand-tagline">Make Them Look.</p>
+        <h1>Simply iconic. Your brand, done right.</h1>
+        <p class="lede">Custom merchandise, brand identity, logos, watermarks, and professional graphic design — everything you need to look as serious as you are.</p>
+        <a class="btn" href="#contact">Get in touch</a>
       </div>
     </section>
 
     <section id="about" class="section">
-      <div class="container about-grid">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2>Crowned daily.</h2>
-          <p>Dezzi Mode is a small business focused on original designs and custom work. Write a short paragraph here about your story, mission, or what makes you different.</p>
-        </div>
-        <aside class="voice-card" aria-label="How she talks">
-          <p class="label">How she talks</p>
-          <p class="voice-line">Make them look.</p>
-          <p class="voice-line voice-cyan">Crowned daily.</p>
-          <p class="voice-line voice-red">Diamonds don't ask permission.</p>
-        </aside>
+      <div class="container">
+        <h2>About</h2>
+        <p class="lede">Dezzi Mode is a full-service creative studio for small businesses, solopreneurs, and entrepreneurs who are done playing small. We build brand identities, logos, watermarks, and custom merchandise — from first sketch to final file. Built in Kenai, Alaska. Shipped everywhere.</p>
       </div>
     </section>
 
     <section id="services" class="section">
       <div class="container">
-        <p class="eyebrow">Services</p>
-        <h2>What we do</h2>
-        <ul class="services">
+        <h2>Services</h2>
+        <ul class="cards">
           <li>
-            <h3>Service One</h3>
-            <p>Short description of this service.</p>
+            <h3>Brand Identity &amp; Logos</h3>
+            <p>Logo, secondary marks, color systems, type hierarchy — the full strategic visual foundation for your business.</p>
           </li>
           <li>
-            <h3>Service Two</h3>
-            <p>Short description of this service.</p>
+            <h3>Watermarks</h3>
+            <p>Custom watermarks to protect and brand your photos, artwork, and digital content.</p>
+          </li>
+          <li>
+            <h3>Professional Graphic Design</h3>
+            <p>Flyers, packaging, event materials, social templates — if it needs a design, we build it.</p>
+          </li>
+          <li>
+            <h3>Custom Merchandise</h3>
+            <p>Graphic tees, hoodies, sticker packs, art prints, and screen print/embroidery files — small runs, big energy.</p>
           </li>
         </ul>
       </div>
     </section>
 
-    <section id="merch" class="section">
+    <section id="pricing" class="section">
       <div class="container">
-        <p class="eyebrow">Merch</p>
-        <h2>The crown tee</h2>
-        <div class="tees">
-          <figure class="tee">
-            <svg viewBox="0 0 360 400" role="img" aria-label="Black tee, front, with crowned diamond on the chest and DEZZI MODE down the sleeve">
-              <path d="M122 18 C150 44 210 44 238 18 L318 56 L352 138 L296 160 L288 126 L288 384 L72 384 L72 126 L64 160 L8 138 L42 56 Z" fill="#161B22" stroke="#2C343F" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M122 18 C150 50 210 50 238 18" fill="none" stroke="#2C343F" stroke-width="5" stroke-linecap="round"/>
-              <text x="300" y="98" text-anchor="middle" transform="rotate(68 300 98)" font-family="Space Grotesk" font-weight="700" font-size="11" letter-spacing="3" fill="#1FE0D0">DEZZI MODE</text>
-              <g transform="translate(200 92) scale(0.62)" class="neon-cyan">
-                <path d="M28 40 L36 14 L50 30 L60 8 L70 30 L84 14 L92 40 Z" fill="none" stroke="#E8174F" stroke-width="4" stroke-linejoin="round"/>
-                <rect x="28" y="44" width="64" height="8" fill="none" stroke="#E8174F" stroke-width="4"/>
-                <polygon points="60,58 96,86 60,126 24,86" fill="none" stroke="#1FE0D0" stroke-width="4" stroke-linejoin="round"/>
-                <polyline points="24,86 96,86" fill="none" stroke="#1FE0D0" stroke-width="3"/>
-                <polyline points="44,86 60,58 76,86 60,126 44,86" fill="none" stroke="#1FE0D0" stroke-width="3" stroke-linejoin="round"/>
-              </g>
-            </svg>
-            <figcaption>Front</figcaption>
-          </figure>
-
-          <figure class="tee">
-            <svg viewBox="0 0 360 400" role="img" aria-label="Black tee, back, with MAKE THEM LOOK in large neon type">
-              <path d="M122 18 C150 30 210 30 238 18 L318 56 L352 138 L296 160 L288 126 L288 384 L72 384 L72 126 L64 160 L8 138 L42 56 Z" fill="#161B22" stroke="#2C343F" stroke-width="2" stroke-linejoin="round"/>
-              <path d="M122 18 C150 34 210 34 238 18" fill="none" stroke="#2C343F" stroke-width="5" stroke-linecap="round"/>
-              <text x="300" y="98" text-anchor="middle" transform="rotate(68 300 98)" font-family="Space Grotesk" font-weight="700" font-size="11" letter-spacing="3" fill="#1FE0D0">DEZZI MODE</text>
-              <text x="180" y="150" text-anchor="middle" font-family="Anton" font-size="62" letter-spacing="3" fill="#FFFFFF">MAKE</text>
-              <text x="180" y="212" text-anchor="middle" font-family="Anton" font-size="62" letter-spacing="3" fill="#FFFFFF">THEM</text>
-              <text x="180" y="274" text-anchor="middle" font-family="Anton" font-size="62" letter-spacing="3" fill="#E8174F" class="neon-red">LOOK.</text>
-              <g transform="translate(156 300) scale(0.4)" class="neon-cyan">
-                <polygon points="60,58 96,86 60,126 24,86" fill="none" stroke="#1FE0D0" stroke-width="6" stroke-linejoin="round"/>
-                <polyline points="24,86 96,86" fill="none" stroke="#1FE0D0" stroke-width="4"/>
-                <polyline points="44,86 60,58 76,86 60,126 44,86" fill="none" stroke="#1FE0D0" stroke-width="4" stroke-linejoin="round"/>
-              </g>
-            </svg>
-            <figcaption>Back</figcaption>
-          </figure>
-        </div>
-      </div>
-    </section>
-
-    <section id="blog" class="section">
-      <div class="container blog-grid">
-        <div>
-          <p class="eyebrow">Blog</p>
-          <h2>Wig of the day</h2>
-          <p>Coming soon — posts and updates about Dezzi Mode.</p>
-        </div>
-        <article class="wotd" aria-label="Wig of the Day, number 01">
-          <p class="wotd-label">Wig of the Day</p>
-          <p class="wotd-num">No. 01</p>
-          <div class="wotd-foot">
-            <span class="wotd-name">[WIG NAME]</span>
-            <span class="wotd-brand">DEZZI MODE</span>
-          </div>
-        </article>
+        <h2>Pricing</h2>
+        <ul class="cards">
+          <li>
+            <h3>Logo Only</h3>
+            <p class="price">$450</p>
+            <p>3 concepts · 2 rounds of revisions.</p>
+          </li>
+          <li>
+            <h3>Mini Brand</h3>
+            <p class="price">$950</p>
+            <p>Logo + color palette + 3 social templates.</p>
+          </li>
+          <li>
+            <h3>Full Brand System</h3>
+            <p class="price">$1,800+</p>
+            <p>Logo · color · type · brand guide · social templates.</p>
+          </li>
+          <li>
+            <h3>Custom Merchandise</h3>
+            <p class="price">from $150</p>
+            <p>Quote based on product and run size.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section id="contact" class="section">
-      <div class="container contact-wrap">
-        <p class="eyebrow">Contact</p>
-        <h2>Get in touch</h2>
-        <p>Fill out the form below and we will get back to you — or email us at <a href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>.</p>
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="lede">Fill out the form below and we will get back to you, or find us elsewhere:</p>
+        <ul class="contact-links">
+          <li>Instagram: <a href="https://instagram.com/dezzi_iconic" target="_blank" rel="noopener">@dezzi_iconic</a></li>
+          <li>Instagram: <a href="https://instagram.com/dezzi_simply_iconic" target="_blank" rel="noopener">@dezzi_simply_iconic</a></li>
+          <li>Kenai, Alaska</li>
+        </ul>
 
-        <!-- To use a working form, sign up at Formspree.io (or similar) and replace the action URL -->
-        <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/xjybzyvg" method="POST">
           <label>
             Your name
             <input type="text" name="name" autocomplete="name" required />
@@ -204,7 +164,7 @@
   <footer class="site-footer">
     <div class="container">
       <svg class="footer-mark" role="img" aria-label="Dezzi Mode logo: solid diamond with jeweled crown"><use href="#logo-d1"/></svg>
-      <p>© <span id="year"></span> Dezzi Mode — All rights reserved.</p>
+      <p>© Dezzi Mode — Kenai, Alaska. All rights reserved.</p>
     </div>
   </footer>
 

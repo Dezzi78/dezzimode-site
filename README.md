@@ -7,10 +7,11 @@ Files:
 - styles.css
 - script.js
 
-Brand: Dezzi Mode (Round 3 logos)
-- Palette (CSS variables in styles.css), matched to the Round 3 logo board: ground #0D1117, surface #161B22, teal #1FE0D0, crimson #E8174F, white #FFFFFF; muted text #A7B0BA, lines #262D36 / #2C343F.
-- Type (Google Fonts): Anton for headlines and tags, Space Grotesk for everything else.
+Brand: Dezzi Mode
 - Logos: Round 3 D1 (solid diamond + jeweled crown) and D2 (neon outline diamond + crown), copied exactly from the Round 3 board as SVG <symbol>s at the top of index.html (#logo-d1, #logo-d2). D2 is in the header and hero; D1 is in the footer and favicon.svg. Do not alter the logos without approval.
+- Colours (CSS variables in styles.css), from the logo boards: ground #0D1117, surface #161B22, teal #1FE0D0, crimson #E8174F, tagline red #FF2A3D, white #FFFFFF; muted text #A7B0BA, lines #262D36 / #2C343F.
+- Type, from the logo boards: Caveat Brush for the DEZZI MODE and "Make Them Look." lettering, Playfair Display Black Italic for headings, DM Mono for nav/labels/buttons, DM Sans for body text.
+- All text is centered.
 
 Run locally
 1. Save these files in a folder (already in this repo).
@@ -29,9 +30,7 @@ Quick DNS notes for Netlify (if you keep the domain at Squarespace and can edit 
 - For the www subdomain, add a CNAME pointing to your Netlify site (example: yoursite.netlify.app).
 
 Contact form
-- The HTML form uses Formspree by default. To make it work:
-  1. Sign up at https://formspree.io and create a form to get an endpoint.
-  2. Replace the action URL in index.html with the endpoint Formspree gives you.
+- The form sends to your Formspree endpoint (https://formspree.io/f/xjybzyvg).
 
 E-commerce options (low-cost to start)
 - Ecwid has a free plan for small catalogs and provides an embed snippet you can paste into the site.
