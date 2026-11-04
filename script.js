@@ -18,10 +18,9 @@ if (menuToggle && nav) {
   });
 }
 
-// Contact form status (works with Formspree or similar endpoints)
-const form = document.getElementById('contact-form');
-const status = document.getElementById('form-status');
-if (form) {
+// Form status for the drop sign-up and contact forms (Formspree)
+document.querySelectorAll('form.js-form').forEach((form) => {
+  const status = document.getElementById(form.dataset.status);
   form.addEventListener('submit', async (e) => {
     e.preventDefault();
     status.textContent = 'Sending...';
@@ -43,4 +42,4 @@ if (form) {
       status.textContent = 'Network error — try again later.';
     }
   });
-}
+});
