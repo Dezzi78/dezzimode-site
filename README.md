@@ -7,6 +7,11 @@ Files:
 - styles.css
 - script.js
 
+Brand: Direction 01 — Neon Crown
+- Palette (CSS variables in styles.css): ink #0B0D12, cyan #22E5D3, red #FF2B4A, paper #F4F6F8, slate #1B1F2A; neutrals #12151C / #232938 / #2C3447 / #9AA3B2.
+- Type (Google Fonts): Anton for headlines and tags, Space Grotesk for everything else.
+- Crowned-diamond mark is an inline SVG symbol at the top of index.html (#mark-crown, #mark-diamond) and is reused via <use>.
+
 Run locally
 1. Save these files in a folder (already in this repo).
 2. In the folder, run a simple server:

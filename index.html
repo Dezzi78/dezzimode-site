@@ -3,18 +3,52 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Dezzimode — Home</title>
+  <title>Dezzi Mode — Make Them Look.</title>
+  <meta name="description" content="Dezzi Mode: crowned daily. Original designs, custom work and merch." />
+  <meta name="theme-color" content="#0B0D12" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Brand mark: crowned diamond (Direction 01 — Neon Crown). Reused below via <use>. -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="mark-crown" viewBox="0 0 120 130">
+        <path d="M28 40 L36 14 L50 30 L60 8 L70 30 L84 14 L92 40 Z" fill="none" stroke="#FF2B4A" stroke-width="3.5" stroke-linejoin="round"/>
+        <rect x="28" y="44" width="64" height="8" fill="none" stroke="#FF2B4A" stroke-width="3.5"/>
+        <circle cx="36" cy="11" r="3.5" fill="#FF2B4A"/>
+        <circle cx="60" cy="5" r="3.5" fill="#FF2B4A"/>
+        <circle cx="84" cy="11" r="3.5" fill="#FF2B4A"/>
+        <polygon points="60,58 96,86 60,126 24,86" fill="none" stroke="#22E5D3" stroke-width="3.5" stroke-linejoin="round"/>
+        <polyline points="24,86 96,86" fill="none" stroke="#22E5D3" stroke-width="2.5"/>
+        <polyline points="44,86 60,58 76,86 60,126 44,86" fill="none" stroke="#22E5D3" stroke-width="2.5" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="mark-diamond" viewBox="20 54 80 76">
+        <polygon points="60,58 96,86 60,126 24,86" fill="none" stroke="#22E5D3" stroke-width="6" stroke-linejoin="round"/>
+        <polyline points="24,86 96,86" fill="none" stroke="#22E5D3" stroke-width="4"/>
+        <polyline points="44,86 60,58 76,86 60,126 44,86" fill="none" stroke="#22E5D3" stroke-width="4" stroke-linejoin="round"/>
+      </symbol>
+    </defs>
+  </svg>
+
   <header class="site-header">
     <div class="container">
-      <a class="logo" href="#">Dezzimode</a>
-      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
-      <nav class="nav" id="nav">
+      <a class="logo" href="#home" aria-label="Dezzi Mode home">
+        <svg class="logo-mark" viewBox="0 0 120 130" aria-hidden="true"><use href="#mark-crown"/></svg>
+        <span class="logo-word">DEZZI MODE</span>
+      </a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/>
+        </svg>
+      </button>
+      <nav class="nav" id="nav" aria-label="Main">
         <a href="#home">Home</a>
         <a href="#about">About</a>
         <a href="#services">Services</a>
+        <a href="#merch">Merch</a>
         <a href="#blog">Blog</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -22,63 +56,149 @@
   </header>
 
   <main>
-    <section id="home" class="hero container">
-      <h1>Welcome to Dezzimode</h1>
-      <p>Design-forward products and services for your creative life.</p>
-      <a class="btn" href="#contact">Get in touch</a>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Dezzi Mode</p>
+          <h1 class="hero-title">Make them <span class="glow-red">look.</span></h1>
+          <p class="hero-lede">Design-forward products and services for your creative life. Crowned daily.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn btn-ghost" href="#merch">See the merch</a>
+          </div>
+        </div>
+
+        <div class="lockup" aria-label="Dezzi Mode logo lockup">
+          <svg class="lockup-mark" viewBox="0 0 120 130" role="img" aria-label="Crowned diamond mark"><use href="#mark-crown"/></svg>
+          <p class="lockup-word">DEZZI MODE</p>
+          <p class="lockup-tag">MAKE THEM LOOK.</p>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="container section">
-      <h2>About</h2>
-      <p>Dezzimode is a small business focused on original designs and custom work. Write a short paragraph here about your story, mission, or what makes you different.</p>
+    <section id="about" class="section">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h2>Crowned daily.</h2>
+          <p>Dezzi Mode is a small business focused on original designs and custom work. Write a short paragraph here about your story, mission, or what makes you different.</p>
+        </div>
+        <aside class="voice-card" aria-label="How she talks">
+          <p class="label">How she talks</p>
+          <p class="voice-line">Make them look.</p>
+          <p class="voice-line voice-cyan">Crowned daily.</p>
+          <p class="voice-line voice-red">Diamonds don't ask permission.</p>
+        </aside>
+      </div>
     </section>
 
-    <section id="services" class="container section">
-      <h2>Services</h2>
-      <ul class="services">
-        <li>
-          <h3>Service One</h3>
-          <p>Short description of this service.</p>
-        </li>
-        <li>
-          <h3>Service Two</h3>
-          <p>Short description of this service.</p>
-        </li>
-      </ul>
+    <section id="services" class="section">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h2>What we do</h2>
+        <ul class="services">
+          <li>
+            <h3>Service One</h3>
+            <p>Short description of this service.</p>
+          </li>
+          <li>
+            <h3>Service Two</h3>
+            <p>Short description of this service.</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section id="blog" class="container section">
-      <h2>Blog</h2>
-      <p>Coming soon — posts and updates about Dezzimode.</p>
+    <section id="merch" class="section">
+      <div class="container">
+        <p class="eyebrow">Merch</p>
+        <h2>The crown tee</h2>
+        <div class="tees">
+          <figure class="tee">
+            <svg viewBox="0 0 360 400" role="img" aria-label="Black tee, front, with crowned diamond on the chest and DEZZI MODE down the sleeve">
+              <path d="M122 18 C150 44 210 44 238 18 L318 56 L352 138 L296 160 L288 126 L288 384 L72 384 L72 126 L64 160 L8 138 L42 56 Z" fill="#12151C" stroke="#2C3447" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M122 18 C150 50 210 50 238 18" fill="none" stroke="#2C3447" stroke-width="5" stroke-linecap="round"/>
+              <text x="300" y="98" text-anchor="middle" transform="rotate(68 300 98)" font-family="Space Grotesk" font-weight="700" font-size="11" letter-spacing="3" fill="#22E5D3">DEZZI MODE</text>
+              <g transform="translate(200 92) scale(0.62)" class="neon-cyan">
+                <path d="M28 40 L36 14 L50 30 L60 8 L70 30 L84 14 L92 40 Z" fill="none" stroke="#FF2B4A" stroke-width="4" stroke-linejoin="round"/>
+                <rect x="28" y="44" width="64" height="8" fill="none" stroke="#FF2B4A" stroke-width="4"/>
+                <polygon points="60,58 96,86 60,126 24,86" fill="none" stroke="#22E5D3" stroke-width="4" stroke-linejoin="round"/>
+                <polyline points="24,86 96,86" fill="none" stroke="#22E5D3" stroke-width="3"/>
+                <polyline points="44,86 60,58 76,86 60,126 44,86" fill="none" stroke="#22E5D3" stroke-width="3" stroke-linejoin="round"/>
+              </g>
+            </svg>
+            <figcaption>Front</figcaption>
+          </figure>
+
+          <figure class="tee">
+            <svg viewBox="0 0 360 400" role="img" aria-label="Black tee, back, with MAKE THEM LOOK in large neon type">
+              <path d="M122 18 C150 30 210 30 238 18 L318 56 L352 138 L296 160 L288 126 L288 384 L72 384 L72 126 L64 160 L8 138 L42 56 Z" fill="#12151C" stroke="#2C3447" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M122 18 C150 34 210 34 238 18" fill="none" stroke="#2C3447" stroke-width="5" stroke-linecap="round"/>
+              <text x="300" y="98" text-anchor="middle" transform="rotate(68 300 98)" font-family="Space Grotesk" font-weight="700" font-size="11" letter-spacing="3" fill="#22E5D3">DEZZI MODE</text>
+              <text x="180" y="150" text-anchor="middle" font-family="Anton" font-size="62" letter-spacing="3" fill="#F4F6F8">MAKE</text>
+              <text x="180" y="212" text-anchor="middle" font-family="Anton" font-size="62" letter-spacing="3" fill="#F4F6F8">THEM</text>
+              <text x="180" y="274" text-anchor="middle" font-family="Anton" font-size="62" letter-spacing="3" fill="#FF2B4A" class="neon-red">LOOK.</text>
+              <g transform="translate(156 300) scale(0.4)" class="neon-cyan">
+                <polygon points="60,58 96,86 60,126 24,86" fill="none" stroke="#22E5D3" stroke-width="6" stroke-linejoin="round"/>
+                <polyline points="24,86 96,86" fill="none" stroke="#22E5D3" stroke-width="4"/>
+                <polyline points="44,86 60,58 76,86 60,126 44,86" fill="none" stroke="#22E5D3" stroke-width="4" stroke-linejoin="round"/>
+              </g>
+            </svg>
+            <figcaption>Back</figcaption>
+          </figure>
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="container section">
-      <h2>Contact</h2>
-      <p>Fill out the form below and we will get back to you — or email us at <a href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>.</p>
+    <section id="blog" class="section">
+      <div class="container blog-grid">
+        <div>
+          <p class="eyebrow">Blog</p>
+          <h2>Wig of the day</h2>
+          <p>Coming soon — posts and updates about Dezzi Mode.</p>
+        </div>
+        <article class="wotd" aria-label="Wig of the Day, number 01">
+          <p class="wotd-label">Wig of the Day</p>
+          <p class="wotd-num">No. 01</p>
+          <div class="wotd-foot">
+            <span class="wotd-name">[WIG NAME]</span>
+            <span class="wotd-brand">DEZZI MODE</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
-      <!-- To use a working form, sign up at Formspree.io (or similar) and replace the action URL -->
-      <form id="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <label>
-          Your name
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button type="submit" class="btn">Send</button>
-        <p id="form-status" class="form-status" aria-live="polite"></p>
-      </form>
+    <section id="contact" class="section">
+      <div class="container contact-wrap">
+        <p class="eyebrow">Contact</p>
+        <h2>Get in touch</h2>
+        <p>Fill out the form below and we will get back to you — or email us at <a href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>.</p>
+
+        <!-- To use a working form, sign up at Formspree.io (or similar) and replace the action URL -->
+        <form id="contact-form" class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <label>
+            Your name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button type="submit" class="btn">Send</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> Dezzimode — All rights reserved.</p>
+      <svg class="footer-mark" viewBox="20 54 80 76" aria-hidden="true"><use href="#mark-diamond"/></svg>
+      <p>© <span id="year"></span> Dezzi Mode — All rights reserved.</p>
     </div>
   </footer>
 

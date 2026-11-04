@@ -4,9 +4,16 @@ document.getElementById('year').textContent = new Date().getFullYear();
 const menuToggle = document.getElementById('menu-toggle');
 const nav = document.getElementById('nav');
 if (menuToggle && nav) {
+  const setOpen = (open) => {
+    nav.classList.toggle('is-open', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+  };
   menuToggle.addEventListener('click', () => {
-    const visible = nav.style.display === 'flex';
-    nav.style.display = visible ? 'none' : 'flex';
+    setOpen(!nav.classList.contains('is-open'));
+  });
+  // close the mobile menu after choosing a section
+  nav.addEventListener('click', (e) => {
+    if (e.target.closest('a')) setOpen(false);
   });
 }
 
