@@ -7,10 +7,10 @@ Files:
 - styles.css
 - script.js
 
-Brand: Direction 01 — Neon Crown
-- Palette (CSS variables in styles.css): ink #0B0D12, cyan #22E5D3, red #FF2B4A, paper #F4F6F8, slate #1B1F2A; neutrals #12151C / #232938 / #2C3447 / #9AA3B2.
+Brand: Dezzi Mode (Round 3 logos)
+- Palette (CSS variables in styles.css), matched to the Round 3 logo board: ground #0D1117, surface #161B22, teal #1FE0D0, crimson #E8174F, white #FFFFFF; muted text #A7B0BA, lines #262D36 / #2C343F.
 - Type (Google Fonts): Anton for headlines and tags, Space Grotesk for everything else.
-- Crowned-diamond mark is an inline SVG symbol at the top of index.html (#mark-crown, #mark-diamond) and is reused via <use>.
+- Logos: Round 3 D1 (solid diamond + jeweled crown) and D2 (neon outline diamond + crown), copied exactly from the Round 3 board as SVG <symbol>s at the top of index.html (#logo-d1, #logo-d2). D2 is in the header and hero; D1 is in the footer and favicon.svg. Do not alter the logos without approval.
 
 Run locally
 1. Save these files in a folder (already in this repo).

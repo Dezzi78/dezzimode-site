@@ -1,20 +1,20 @@
-/* Dezzi Mode — Direction 01: Neon Crown */
+/* Dezzi Mode — colours match the Round 3 logos (D1/D2) */
 :root{
-  /* Palette (from the brand board) */
-  --ink:#0B0D12;        /* page ground */
-  --cyan:#22E5D3;       /* neon accent */
-  --red:#FF2B4A;        /* neon accent */
-  --paper:#F4F6F8;      /* primary text */
-  --slate:#1B1F2A;      /* deep surface */
+  /* Palette (from the Round 3 logo board) */
+  --ink:#0D1117;        /* page ground */
+  --cyan:#1FE0D0;       /* neon accent */
+  --red:#E8174F;        /* neon accent */
+  --paper:#FFFFFF;      /* primary text */
+  --slate:#161B22;      /* deep surface */
 
   /* Supporting neutrals */
-  --surface:#12151C;
-  --line:#232938;
-  --line-strong:#2C3447;
-  --muted:#9AA3B2;
+  --surface:#161B22;
+  --line:#262D36;
+  --line-strong:#2C343F;
+  --muted:#A7B0BA;
 
-  --glow-cyan:0 0 14px rgba(34,229,211,.7);
-  --glow-red:0 0 14px rgba(255,43,74,.6);
+  --glow-cyan:0 0 14px rgba(31,224,208,.7);
+  --glow-red:0 0 14px rgba(232,23,79,.6);
 
   --font-display:'Anton',Impact,'Arial Narrow',sans-serif;
   --font-body:'Space Grotesk',system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
@@ -70,7 +70,7 @@ p{margin:0 0 1rem}
   position:sticky;
   top:0;
   z-index:10;
-  background:rgba(11,13,18,.92);
+  background:rgba(13,17,23,.92);
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);
 }
@@ -83,7 +83,9 @@ p{margin:0 0 1rem}
 }
 .logo{display:flex;align-items:center;gap:.65rem;text-decoration:none;color:var(--paper)}
 .logo:hover{color:var(--paper)}
-.logo-mark{width:30px;height:33px;filter:drop-shadow(0 0 5px var(--cyan))}
+/* let the logos' own glow show past their edges (logo code itself untouched) */
+#logo-d1,#logo-d2{overflow:visible}
+.logo-mark{width:38px;height:43px;overflow:visible}
 .logo-word{font-family:var(--font-display);font-size:1.6rem;letter-spacing:.1em;line-height:1}
 
 .nav{display:flex;gap:.25rem}
@@ -126,11 +128,11 @@ p{margin:0 0 1rem}
   text-decoration:none;
   border:2px solid var(--cyan);
   border-radius:var(--radius);
-  box-shadow:0 0 18px rgba(34,229,211,.35);
+  box-shadow:0 0 18px rgba(31,224,208,.35);
   cursor:pointer;
   transition:box-shadow .2s, background .2s, color .2s;
 }
-.btn:hover{color:var(--ink);box-shadow:0 0 26px rgba(34,229,211,.6)}
+.btn:hover{color:var(--ink);box-shadow:0 0 26px rgba(31,224,208,.6)}
 .btn-ghost{background:transparent;color:var(--paper);border-color:var(--line-strong);box-shadow:none}
 .btn-ghost:hover{color:var(--cyan);border-color:var(--cyan);box-shadow:none}
 
@@ -155,9 +157,9 @@ p{margin:0 0 1rem}
   border-radius:var(--radius);
   text-align:center;
 }
-.lockup-mark{width:104px;height:112px;filter:drop-shadow(0 0 7px var(--cyan))}
+.lockup-mark{width:150px;height:170px;overflow:visible}
 .lockup-word{margin:0;font-family:var(--font-display);font-size:clamp(2.25rem,5vw,2.9rem);line-height:1;letter-spacing:.1em;text-shadow:var(--glow-cyan)}
-.lockup-tag{margin:0;font-size:.875rem;font-weight:700;letter-spacing:.32em;color:var(--red);text-shadow:0 0 10px rgba(255,43,74,.6)}
+.lockup-tag{margin:0;font-size:.875rem;font-weight:700;letter-spacing:.32em;color:var(--red);text-shadow:0 0 10px rgba(232,23,79,.6)}
 
 /* ---------- Sections ---------- */
 .section{padding:5rem 0;border-bottom:1px solid var(--line)}
@@ -194,7 +196,7 @@ p{margin:0 0 1rem}
   border:1px solid var(--line);
   border-radius:var(--radius);
 }
-.services li:hover{border-color:var(--cyan);box-shadow:0 0 18px rgba(34,229,211,.25)}
+.services li:hover{border-color:var(--cyan);box-shadow:0 0 18px rgba(31,224,208,.25)}
 .services p{margin:0}
 
 /* Merch tees */
@@ -209,8 +211,8 @@ p{margin:0 0 1rem}
   color:var(--muted);
   text-align:center;
 }
-.neon-cyan{filter:drop-shadow(0 0 5px #22E5D3)}
-.neon-red{filter:drop-shadow(0 0 7px #FF2B4A)}
+.neon-cyan{filter:drop-shadow(0 0 5px #1FE0D0)}
+.neon-red{filter:drop-shadow(0 0 7px #E8174F)}
 
 /* Wig of the Day card */
 .wotd{
@@ -224,7 +226,7 @@ p{margin:0 0 1rem}
   padding:1.5rem;
   background:var(--surface);
   border:2px solid var(--cyan);
-  box-shadow:0 0 18px rgba(34,229,211,.45);
+  box-shadow:0 0 18px rgba(31,224,208,.45);
 }
 .section .wotd-label{margin:0;font-size:.875rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--cyan)}
 .section .wotd-num{margin:0;font-family:var(--font-display);font-size:clamp(4.5rem,22vw,6rem);line-height:1;color:var(--red);text-shadow:var(--glow-red)}
@@ -258,7 +260,7 @@ p{margin:0 0 1rem}
   text-transform:none;
 }
 .contact-form input:focus,
-.contact-form textarea:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 1px var(--cyan),0 0 14px rgba(34,229,211,.35)}
+.contact-form textarea:focus{outline:none;border-color:var(--cyan);box-shadow:0 0 0 1px var(--cyan),0 0 14px rgba(31,224,208,.35)}
 .contact-form .btn{justify-self:start}
 .section .form-status{margin:0;color:var(--muted)}
 
@@ -266,7 +268,7 @@ p{margin:0 0 1rem}
 .site-footer{padding:2.5rem 0;color:var(--muted);font-size:.875rem}
 .site-footer .container{display:flex;flex-direction:column;align-items:center;gap:.75rem;text-align:center}
 .site-footer p{margin:0}
-.footer-mark{width:28px;height:27px;filter:drop-shadow(0 0 4px var(--cyan))}
+.footer-mark{width:44px;height:50px;overflow:visible}
 
 /* ---------- Responsive ---------- */
 @media (min-width:768px){
