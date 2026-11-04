@@ -12,7 +12,7 @@ Brand: Dezzi Mode
 - Colours (CSS variables in styles.css), from the logo boards: ground #0D1117, surface #161B22, teal #1FE0D0, crimson #E8174F, tagline red #FF2A3D, white #FFFFFF; muted text #A7B0BA, lines #262D36 / #2C343F.
 - Type: Caveat Brush (the lettering on the logo boards) for DEZZI MODE, "Make Them Look." and all big headings; DM Mono for labels, nav and buttons; DM Sans for body text.
 - Vibe: downtown at night — skyline with lit windows, neon glow and flicker, brick wall with spray-paint lettering, red paint drips, equalizer bars. All text is centered.
-- Wording comes from the Dezzi Mode-only site (Make Them Look.). Nothing from Dezzi's Designs belongs on this site.
+- Wording comes from the Dezzi Mode-only site (Make Them Look.). Nothing from Dezzi's Designs belongs on this site. Instagram: @dezzi_simply_iconic (the owner's choice for Dezzi Mode).
 
 Run locally
 1. Save these files in a folder (already in this repo).
