@@ -5,137 +5,191 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>DEZZI MODE — Make Them Look.</title>
   <meta name="description" content="Dezzi Mode — streetwear graphics, custom apparel, screen print files, stickers, and limited art prints. Shipped from Kenai, Alaska." />
+  <meta name="theme-color" content="#0D1117" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik+Wet+Paint&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&family=Permanent+Marker&family=Caveat+Brush&family=DM+Mono:wght@500&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <nav class="gnav" id="nav-bar">
-    <a href="#top" class="gnav-mark">DEZZI</a>
-    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+  <header class="site-header" id="nav-bar">
+    <a href="#top" class="brand" aria-label="Dezzi Mode — home">
+      <svg class="brand-mark" viewBox="0 -40 200 220" width="44" height="48" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-linejoin="round">
+          <path d="M62 30 L62 2 L81 18 L100 -14 L119 18 L138 2 L138 30 Z" stroke-width="8"/>
+          <path d="M30 72 L60 38 L140 38 L170 72 L100 176 Z" stroke-width="8"/>
+          <path d="M30 72 L170 72 M80 72 L100 176 L120 72" stroke-width="5"/>
+        </g>
+      </svg>
+      <span class="brand-word">Dezzi Mode</span>
+    </a>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
       <span></span><span></span><span></span>
     </button>
-    <div class="gnav-links" id="nav">
+    <nav class="site-nav" id="nav" aria-label="Main">
       <a href="#label">Label</a>
       <a href="#lookbook">Lookbook</a>
       <a href="#drop">Drop</a>
       <a href="#contact">Contact</a>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <main id="top">
 
-    <!-- ░░ HERO — FULL-BLEED ░░ -->
-    <section class="bleed bleed-void hero">
-      <div class="halftone" aria-hidden="true"></div>
-      <div class="hero-type">
-        <h1 class="mega">MAKE<br>THEM<br><span class="mega-accent">LOOK.</span></h1>
+    <!-- ░░ HERO — Crown Jewel ░░ -->
+    <section class="hero glow glow-hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Small town address — city-cut attitude</p>
+        <h1 class="display">Wear the<br><span class="glow-teal">crown.</span></h1>
+        <p class="marker marker-crimson">not like the rest.</p>
+        <p class="lede">Glam meets graffiti. Diamonds, neon and a little attitude, sprayed across a brick wall at 2am.</p>
+        <div class="cta-row">
+          <a href="#drop" class="btn btn-crimson">Shop the drop</a>
+          <a href="#contact" class="btn btn-outline">Book the studio</a>
+        </div>
       </div>
-      <div class="tag tag-red tag-1" aria-hidden="true">DEZZI MODE</div>
-      <div class="tag tag-teal tag-2" aria-hidden="true">EST. ALASKA</div>
-      <p class="scroll-cue">scroll ↓</p>
-      <div class="torn" style="--edge:#008080" aria-hidden="true"></div>
+
+      <div class="hero-art">
+        <svg class="tee" viewBox="0 0 240 260" width="400" height="433" role="img" aria-label="Black tee mockup with neon crown-and-diamond mark">
+          <path d="M70 10 L100 0 Q120 22 140 0 L170 10 L230 60 L200 100 L180 85 L180 250 L60 250 L60 85 L40 100 L10 60 Z" fill="#161B22" stroke="#262D36" stroke-width="2"/>
+          <g transform="translate(88 58) scale(0.32)">
+            <g fill="none" stroke="#1FE0D0" stroke-linejoin="round">
+              <path d="M62 30 L62 2 L81 18 L100 -14 L119 18 L138 2 L138 30 Z" stroke-width="7"/>
+              <path d="M30 72 L60 38 L140 38 L170 72 L100 176 Z" stroke-width="7"/>
+              <path d="M30 72 L170 72 M60 38 L80 72 L100 38 L120 72 L140 38 M80 72 L100 176 L120 72" stroke-width="4"/>
+            </g>
+            <circle cx="62" cy="2" r="7" fill="#E8174F"/><circle cx="100" cy="-14" r="7" fill="#E8174F"/><circle cx="138" cy="2" r="7" fill="#E8174F"/>
+          </g>
+          <text x="120" y="140" text-anchor="middle" font-family="Permanent Marker, cursive" font-size="24" fill="#1FE0D0" transform="rotate(-4 120 140)">DEZZI MODE</text>
+        </svg>
+        <div class="sticker" aria-hidden="true">stay<br>different</div>
+      </div>
     </section>
 
-    <!-- ░░ LABEL / MANIFESTO — FULL-BLEED TEAL ░░ -->
-    <section id="label" class="bleed bleed-electric manifesto">
-      <p class="eyebrow eyebrow-dark">// THE LABEL</p>
-      <p class="pull-quote reveal">
-        Designs go from screen to something you can wear, carry, and collect.
-        Graphic tees. Sticker packs. Art prints. Screen print files. Custom apparel.
-        <span class="tag tag-inline tag-void">small runs, big energy.</span>
-        Shipped from Alaska with a thank-you note in every package.
-      </p>
-      <div class="torn" style="--edge:#0D0D0D" aria-hidden="true"></div>
+    <!-- ░░ LABEL — lockup + manifesto ░░ -->
+    <section id="label" class="label">
+      <div class="label-inner">
+        <div class="lockup-panel reveal">
+          <svg class="lockup" viewBox="-70 -80 340 330" width="350" height="340" role="img" aria-label="Dezzi Mode logo: crowned diamond with DEZZI MODE tagged across it and Make Them Look underneath">
+            <g fill="#1FE0D0" opacity="0.5"><circle cx="-40" cy="20" r="2"/><circle cx="-52" cy="60" r="1.5"/><circle cx="240" cy="10" r="2"/><circle cx="252" cy="70" r="1.5"/><circle cx="230" cy="130" r="2"/><circle cx="-30" cy="140" r="1.5"/></g>
+            <path class="neon-teal" d="M56 -8 L56 -40 L78 -24 L100 -58 L122 -24 L144 -40 L144 -8 Z" fill="#1FE0D0"/>
+            <g fill="#FFFFFF"><circle cx="64" cy="-16" r="3"/><circle cx="73" cy="-16" r="3"/><circle cx="82" cy="-16" r="3"/><circle cx="91" cy="-16" r="3"/><circle cx="100" cy="-16" r="3"/><circle cx="109" cy="-16" r="3"/><circle cx="118" cy="-16" r="3"/><circle cx="127" cy="-16" r="3"/><circle cx="136" cy="-16" r="3"/></g>
+            <circle cx="56" cy="-40" r="7" fill="#E8174F"/><circle cx="100" cy="-58" r="7" fill="#E8174F"/><circle cx="144" cy="-40" r="7" fill="#E8174F"/>
+            <path class="neon-teal" d="M34 0 L166 0 L200 56 L100 162 L0 56 Z" fill="#3B4352" stroke="#1FE0D0" stroke-width="5" stroke-linejoin="round"/>
+            <path d="M0 56 L200 56 M34 0 L60 56 L100 0 L140 56 L166 0 M100 0 L100 162 M60 56 L100 162 M140 56 L100 162" fill="none" stroke="#161B22" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <text class="neon-teal" x="100" y="100" text-anchor="middle" font-family="Caveat Brush, cursive" font-size="64" fill="#1FE0D0" stroke="#0D1117" stroke-width="9" paint-order="stroke" stroke-linejoin="round" transform="rotate(-6 100 100)">DEZZI MODE</text>
+            <path d="M6 226 C60 212 150 214 206 202" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+            <text class="neon-red" x="104" y="212" text-anchor="middle" font-family="Caveat Brush, cursive" font-size="40" fill="#FF2A3D" transform="rotate(-4 104 212)">Make Them Look.</text>
+            <path d="M0 -20 Q3 -3 20 0 Q3 3 0 20 Q-3 3 -20 0 Q-3 -3 0 -20 Z" fill="#FFFFFF" transform="translate(196 8) scale(0.9)"/>
+          </svg>
+        </div>
+        <div class="label-copy reveal">
+          <p class="eyebrow">The label</p>
+          <h2 class="display display-md">Screen to<br><span class="glow-teal">street.</span></h2>
+          <p class="lede">
+            Designs go from screen to something you can wear, carry, and collect.
+            Graphic tees. Sticker packs. Art prints. Screen print files. Custom apparel.
+            <span class="marker marker-inline marker-crimson">small runs, big energy.</span>
+            Shipped from Alaska with a thank-you note in every package.
+          </p>
+        </div>
+      </div>
     </section>
 
     <!-- ░░ LOOKBOOK INDEX ░░ -->
     <section id="lookbook" class="lookbook">
-      <div class="lb-row lb-paper reveal">
-        <span class="lb-ghost lb-ghost-red">01</span>
-        <h3 class="lb-name">Streetwear Graphic Design</h3>
-        <p class="lb-desc">Drop-ready apparel graphics</p>
+      <div class="section-head">
+        <p class="eyebrow">Lookbook</p>
+        <h2 class="display display-md">What we <span class="glow-crimson">make.</span></h2>
       </div>
-      <div class="lb-row lb-void reveal">
-        <span class="lb-ghost lb-ghost-teal">02</span>
-        <h3 class="lb-name">Custom Apparel</h3>
-        <p class="lb-desc">Tees, hoodies, hats — small batch</p>
-      </div>
-      <div class="lb-row lb-paper reveal">
-        <span class="lb-ghost lb-ghost-red">03</span>
-        <h3 class="lb-name">Screen Print &amp; Embroidery Files</h3>
-        <p class="lb-desc">Production-ready art files</p>
-      </div>
-      <div class="lb-row lb-void reveal">
-        <span class="lb-ghost lb-ghost-teal">04</span>
-        <h3 class="lb-name">Labels, Stickers &amp; Decals</h3>
-        <p class="lb-desc">Vinyl, holographic, weatherproof</p>
-      </div>
-      <div class="lb-row lb-paper reveal">
-        <span class="lb-ghost lb-ghost-red">05</span>
-        <h3 class="lb-name">Art Prints &amp; Collectibles</h3>
-        <p class="lb-desc">Signed, numbered, limited</p>
-      </div>
+      <ol class="lb-grid">
+        <li class="lb-card reveal">
+          <span class="lb-num lb-num-teal">01</span>
+          <h3 class="lb-name">Streetwear Graphic Design</h3>
+          <p class="lb-desc">Drop-ready apparel graphics</p>
+        </li>
+        <li class="lb-card reveal">
+          <span class="lb-num lb-num-crimson">02</span>
+          <h3 class="lb-name">Custom Apparel</h3>
+          <p class="lb-desc">Tees, hoodies, hats — small batch</p>
+        </li>
+        <li class="lb-card reveal">
+          <span class="lb-num lb-num-teal">03</span>
+          <h3 class="lb-name">Screen Print &amp; Embroidery Files</h3>
+          <p class="lb-desc">Production-ready art files</p>
+        </li>
+        <li class="lb-card reveal">
+          <span class="lb-num lb-num-crimson">04</span>
+          <h3 class="lb-name">Labels, Stickers &amp; Decals</h3>
+          <p class="lb-desc">Vinyl, holographic, weatherproof</p>
+        </li>
+        <li class="lb-card reveal">
+          <span class="lb-num lb-num-teal">05</span>
+          <h3 class="lb-name">Art Prints &amp; Collectibles</h3>
+          <p class="lb-desc">Signed, numbered, limited</p>
+        </li>
+      </ol>
     </section>
 
-    <!-- ░░ DROP — FULL-BLEED VENOM ░░ -->
-    <section id="drop" class="bleed bleed-venom drop">
-      <div class="halftone halftone-dark" aria-hidden="true"></div>
-      <p class="eyebrow">// FIRST DROP</p>
-      <h2 class="mega mega-tight">COMING<br>SOON.</h2>
-      <div class="tag tag-void tag-3" aria-hidden="true">LIMITED. NO RESTOCKS.</div>
+    <!-- ░░ DROP ░░ -->
+    <section id="drop" class="drop glow glow-drop">
+      <p class="eyebrow">First drop</p>
+      <h2 class="display">Coming<br><span class="glow-crimson">soon.</span></h2>
+      <p class="marker marker-teal">limited. no restocks.</p>
       <form id="notify-form" class="street-form" action="https://formspree.io/f/xjybzyvg" method="POST">
         <input type="hidden" name="form_type" value="Get Notified — Dezzi Mode Drop" />
         <label class="visually-hidden" for="notify-email">Email address</label>
-        <input id="notify-email" type="email" name="email" placeholder="YOUR@EMAIL.COM" required />
-        <button type="submit" class="btn-stamp">GET NOTIFIED</button>
+        <input id="notify-email" type="email" name="email" placeholder="your@email.com" autocomplete="email" required />
+        <button type="submit" class="btn btn-crimson">Get notified</button>
       </form>
       <p id="notify-status" class="form-status" aria-live="polite"></p>
-      <div class="torn" style="--edge:#0D0D0D" aria-hidden="true"></div>
     </section>
 
-    <!-- ░░ CONTACT — FULL-BLEED VOID ░░ -->
-    <section id="contact" class="bleed bleed-void contact">
-      <p class="eyebrow eyebrow-teal">// TALK TO US</p>
-      <h2 class="mega mega-tight">LET'S<br><span class="mega-accent-teal">BUILD.</span></h2>
-      <div class="contact-grid reveal">
-        <div class="contact-block">
-          <span class="contact-label">Email</span>
-          <a class="contact-value" href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a>
-        </div>
-        <div class="contact-block">
-          <span class="contact-label">Location</span>
-          <span class="contact-value">Kenai, Alaska</span>
-        </div>
-        <div class="contact-block">
-          <span class="contact-label">Instagram</span>
-          <a class="contact-value" href="https://instagram.com/dezzi_simply_iconic" target="_blank" rel="noopener">@dezzi_simply_iconic</a>
-        </div>
-        <div class="contact-block">
-          <span class="contact-label">Site</span>
-          <a class="contact-value" href="https://dezzimode.studio" target="_blank" rel="noopener">dezzimode.studio</a>
-        </div>
+    <!-- ░░ CONTACT ░░ -->
+    <section id="contact" class="contact">
+      <div class="section-head">
+        <p class="eyebrow">Talk to us</p>
+        <h2 class="display display-md">Let's <span class="glow-teal">build.</span></h2>
       </div>
+      <div class="contact-layout">
+        <dl class="contact-grid reveal">
+          <div class="contact-block">
+            <dt class="contact-label">Email</dt>
+            <dd><a class="contact-value" href="mailto:hello@dezzimode.studio">hello@dezzimode.studio</a></dd>
+          </div>
+          <div class="contact-block">
+            <dt class="contact-label">Location</dt>
+            <dd class="contact-value">Kenai, Alaska</dd>
+          </div>
+          <div class="contact-block">
+            <dt class="contact-label">Instagram</dt>
+            <dd><a class="contact-value" href="https://instagram.com/dezzi_simply_iconic" target="_blank" rel="noopener">@dezzi_simply_iconic</a></dd>
+          </div>
+          <div class="contact-block">
+            <dt class="contact-label">Site</dt>
+            <dd><a class="contact-value" href="https://dezzimode.studio" target="_blank" rel="noopener">dezzimode.studio</a></dd>
+          </div>
+        </dl>
 
-      <form id="contact-form" class="street-form street-form-stacked" action="https://formspree.io/f/xjybzyvg" method="POST">
-        <input type="hidden" name="form_type" value="Contact — Dezzi Mode" />
-        <label class="visually-hidden" for="cf-name">Your name</label>
-        <input id="cf-name" type="text" name="name" placeholder="NAME" required />
-        <label class="visually-hidden" for="cf-email">Email</label>
-        <input id="cf-email" type="email" name="email" placeholder="EMAIL" required />
-        <label class="visually-hidden" for="cf-message">Message</label>
-        <textarea id="cf-message" name="message" rows="3" placeholder="MESSAGE"></textarea>
-        <button type="submit" class="btn-stamp btn-stamp-teal">SEND</button>
-      </form>
-      <p id="form-status" class="form-status" aria-live="polite"></p>
+        <form id="contact-form" class="street-form street-form-stacked" action="https://formspree.io/f/xjybzyvg" method="POST">
+          <input type="hidden" name="form_type" value="Contact — Dezzi Mode" />
+          <label for="cf-name">Name</label>
+          <input id="cf-name" type="text" name="name" autocomplete="name" required />
+          <label for="cf-email">Email</label>
+          <input id="cf-email" type="email" name="email" autocomplete="email" required />
+          <label for="cf-message">Message</label>
+          <textarea id="cf-message" name="message" rows="4"></textarea>
+          <button type="submit" class="btn btn-outline">Send</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <span>© <span id="year"></span> DEZZI MODE</span>
-    <span class="footer-tag">MAKE THEM LOOK.</span>
+    <span>© <span id="year"></span> Dezzi Mode · Kenai, Alaska</span>
+    <span class="footer-tag">Make Them Look.</span>
   </footer>
 
   <script src="script.js"></script>

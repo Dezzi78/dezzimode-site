@@ -1,8 +1,10 @@
 # Dezzi Mode — Site
 
 This repository contains the static site for **Dezzi Mode**, the
-streetwear/merch label — styled with the brand's brutalist Void/Venom/Electric
-palette (`#0D0D0D` / `#990000` / `#008080`).
+streetwear/merch label — styled with the "Diamond District / Crown Jewel"
+brand system: Ink Base `#0D1117`, Neon Teal `#1FE0D0`, Crimson `#E8174F`, White;
+type in Playfair Display (italic 900), Permanent Marker, DM Mono and DM Sans,
+with the crowned-diamond + "Make Them Look." lockup (Caveat Brush) as the mark.
 
 Files:
 - `index.html`, `styles.css`, `script.js` — the live public site
