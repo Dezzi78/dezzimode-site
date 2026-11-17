@@ -175,6 +175,9 @@ a:hover{color:var(--white)}
 
 /* ---------- Sections ---------- */
 .section{position:relative;padding:6rem 0;border-top:1px solid var(--line)}
+/* menu links stop just below the sticky menu bar */
+section[id]{scroll-margin-top:112px}
+@media (max-width:767px){section[id]{scroll-margin-top:72px}}
 
 /* The Label — brick wall with spray paint */
 .wall{
